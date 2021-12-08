@@ -1,0 +1,60 @@
+// ====================
+// CONTAINER: Sets padding and margins for consistency
+// ====================
+@mixin container {
+  width: 90%;
+  margin: auto;
+  padding: 2rem 0;
+
+  @include above($phone) {
+    padding: 3rem 1.5rem;
+    max-width: calc(640px + 10%);
+  }
+
+  @include above($tablet) {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+  }
+}
+
+// ====================
+// HCONTAINER: Sets padding and margins for consistency horizontally
+// ====================
+@mixin hContainer {
+  width: 90%;
+  max-width: 90%;
+  height: 100%;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+
+  @include above($phone) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: calc(640px + 10%);
+  }
+
+  @include above($tablet) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1100px;
+  }
+}
+
+// ====================
+// ABOVE: Sets media query above specified width
+// ====================
+@mixin above($width) {
+  @media screen and (min-width: #{$width}) {
+    @content;
+  }
+}
+
+// ====================
+// BELOW: Sets media query below specified width
+// ====================
+@mixin above($width) {
+  @media screen and (min-width: #{$width}) {
+    @content;
+  }
+}
