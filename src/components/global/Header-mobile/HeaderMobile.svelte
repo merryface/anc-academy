@@ -5,6 +5,7 @@
   $: isOpen = open ? openClass : '';
 
   let src = "./assets/logo_white.png";
+  import MdClose from 'svelte-icons/md/MdClose.svelte'
 </script>
 
 <section class="HeaderMobile">
@@ -20,7 +21,9 @@
   <div class="HeaderMobile__navMenu {isOpen}">
     <div class="HeaderMobile__navMenuTop">
       <img class="HeaderMobile__menuLogo" {src} alt="white ANC logo">
-      <p class="HeaderMobile__closeButton REPLACEwithICON" on:click={toggleMenu}>X</p>
+      <div class="HeaderMobile__closeButton" on:click={toggleMenu}>
+        <MdClose />
+      </div>
     </div>
     <ul class="HeaderMobile__navItems">
       <li class="HeaderMobile__navItem"><a href="/">Home</a></li>
