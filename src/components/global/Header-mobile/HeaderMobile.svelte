@@ -3,6 +3,7 @@
   const toggleMenu = () => open = !open;
   const openClass = "HeaderMobile__navMenu-active";
   $: isOpen = open ? openClass : '';
+  $: menuOpen = open ? "open" : '';
 
   let src = "./assets/logo_white.png";
   import MdClose from 'svelte-icons/md/MdClose.svelte'
@@ -11,7 +12,7 @@
 <section class="HeaderMobile">
   <div class="HeaderMobile__container">
     <img class="HeaderMobile__logo" {src} alt="white ANC logo">
-    <div class="HeaderMobile__burgerMenu" on:click={toggleMenu}>
+    <div class="HeaderMobile__burgerMenu {menuOpen}" on:click={toggleMenu}>
       <div class="HeaderMobile__burgerLine line1"></div>
       <div class="HeaderMobile__burgerLine line2"></div>
       <div class="HeaderMobile__burgerLine line3"></div>

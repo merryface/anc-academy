@@ -25,10 +25,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
       cursor: pointer;
     }
+  }
+
+  &__burgerMenu.open {
+    transform: rotate(90deg) scaleX(0.5);
+    transition: all 0.2s ease-in-out;
   }
 
   &__burgerLine {
