@@ -1,3 +1,36 @@
+@import "../../../utils/utils.scss";
+
+
 .Header {
-  background: red;
+  width: 100%;
+  height: 4rem;
+  background: $black;
+  position: relative;
+
+  &__container {
+    @include hContainer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__logo {
+    height: 3rem;
+    object-fit: contain;
+  }
+
+  &__navItems {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  &__navItem {
+    a {
+      font-size: 1.4rem;
+      font-family: sans-serif;
+      text-decoration: none;
+      color: $white;
+    }
+  }
 }

@@ -1,9 +1,10 @@
 <script>
-import HeaderMobile from "./components/global/Header-mobile/HeaderMobile.svelte";
+  import Header from "./components/global/HeaderGlobal.svelte";
 </script>
 
 <main>
-<HeaderMobile />
+  <Header />
+
 </main>
 
 <style>
