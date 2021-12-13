@@ -1,6 +1,7 @@
 @import '../../../utils/utils.scss';
 
 .LearningFromPilots {
+  padding-bottom: 10rem;
   &__container {
     @include container;
     display: flex;
@@ -12,7 +13,35 @@
     margin-bottom: 2rem;
   }
 
+  &__subtitle {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: $secondary-text;
+    margin-bottom: 4rem;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: $black;
+    margin-bottom: 2.4rem;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $primary-colour;
+
+    }
+  }
+
   .icon {
-    height: 1.4rem;
+    height: 1.3rem;
+    margin-left: 0.8rem;
+  }
+
+  &__textContent {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
   }
 }
