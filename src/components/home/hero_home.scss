@@ -1,0 +1,10 @@
+@import "../../utils/utils.scss";
+
+.HeroHome {
+  background: $primary-colour;
+  color: $white;
+
+  &__container {
+@include container;
+  }
+}
