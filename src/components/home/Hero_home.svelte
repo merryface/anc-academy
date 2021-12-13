@@ -4,6 +4,12 @@
 </script>
 
 <section class="HeroHome">
+  <div class="HeroHome__video">
+    <video class="HeroHome__videoContent" autoplay muted loop id="myVideo">
+      <source src="./assets/homeHeroVideo.mp4" type="video/mp4">
+    </video>
+  </div>
+
   <div class="HeroHome__container">
     <div class="HeroHome__cta">
       <div class="HeroHome__ctaItem">

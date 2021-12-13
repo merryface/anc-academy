@@ -1,8 +1,21 @@
 @import "../../utils/utils.scss";
 
 .HeroHome {
+  $header-height: 4rem;
+
   background: $primary-colour;
   color: $white;
+
+  &__video {
+    width: 100%;
+
+  }
+  &__videoContent {
+    height: 70vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+  }
 
   &__container {
     @include container;
