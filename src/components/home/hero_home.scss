@@ -1,0 +1,85 @@
+@import "../../utils/utils.scss";
+
+.HeroHome {
+  $header-height: 4rem;
+  $cta-container-height: 10.1rem;
+
+  background: $primary-colour;
+  color: $white;
+
+  &__video {
+    width: 100%;
+
+  }
+  &__videoContent {
+    height: 70vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+
+    @include above($tablet) {
+      height: calc(100vh - #{$header-height} - $cta-container-height);
+    }
+  }
+
+  &__container {
+    @include container;
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include above($tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__ctaItem {
+    display: flex;
+    flex-direction: column;
+
+    @include above($phone) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+
+    @include above($phone) {
+      margin-bottom: 0;
+    }
+
+    @include above($tablet) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 18rem;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border: 1px solid $white;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    height: 1.6rem;
+    color: $white;
+  }
+}
