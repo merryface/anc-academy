@@ -61,3 +61,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+p, a, ul, ol, li, form, label, span, div, section {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Fjalla One', sans-serif;
+}
