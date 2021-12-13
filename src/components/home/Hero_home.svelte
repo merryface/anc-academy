@@ -1,12 +1,12 @@
 <script>
-
   import IoIosAirplane from 'svelte-icons/io/IoIosAirplane.svelte'
+  const src = "./assets/homeHeroVideo.mp4"
 </script>
 
 <section class="HeroHome">
   <div class="HeroHome__video">
     <video class="HeroHome__videoContent" autoplay muted loop id="myVideo">
-      <source src="./assets/homeHeroVideo.mp4" type="video/mp4">
+      <source {src} type="video/mp4">
     </video>
   </div>
 
