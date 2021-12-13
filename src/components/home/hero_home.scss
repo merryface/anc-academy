@@ -5,6 +5,39 @@
   color: $white;
 
   &__container {
-@include container;
+    @include container;
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 18rem;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border: 1px solid $white;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    height: 1.6rem;
+    color: $white;
   }
 }
