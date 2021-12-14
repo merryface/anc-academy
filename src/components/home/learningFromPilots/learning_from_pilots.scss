@@ -6,11 +6,23 @@
     @include container;
     display: flex;
     flex-direction: column;
+
+    @include above($phone) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 3rem;
+    }
   }
 
   &__title {
     font-size: 2rem;
     margin-bottom: 2rem;
+
+    @include above($phone) {
+      font-size: 3rem;
+      line-height: 3.7rem;
+      margin-bottom: 1rem;
+    }
   }
 
   &__subtitle {
@@ -18,6 +30,10 @@
     text-transform: uppercase;
     color: $secondary-text;
     margin-bottom: 4rem;
+
+    @include above($phone) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__link {
@@ -31,7 +47,6 @@
 
     &:hover {
       color: $primary-colour;
-
     }
   }
 
@@ -40,8 +55,18 @@
     margin-left: 0.8rem;
   }
 
+  &__text {
+    @include above($phone) {
+      max-width: 40rem;
+    }
+  }
+
   &__textContent {
     font-size: 1.2rem;
     line-height: 1.8rem;
+
+    @include above($phone) {
+      line-height: 2.1rem;
+    }
   }
 }
