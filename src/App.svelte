@@ -3,7 +3,7 @@
   import FreeSeminars from "./components/home/freeSeminars/FreeSeminars.svelte";
   import HeroHome from "./components/home/hero_home/Hero_home.svelte";
   import LearningFromPilots from "./components/home/learningFromPilots/LearningFromPilots.svelte";
-  
+  import Testimonials from "./components/home/testimonials/Testimonials.svelte";
 </script>
 
 <main>
@@ -11,4 +11,5 @@
   <HeroHome />
   <LearningFromPilots />
   <FreeSeminars />
+  <Testimonials />
 </main>
