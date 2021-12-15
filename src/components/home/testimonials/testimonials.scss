@@ -1,0 +1,12 @@
+@import '../../../utils/utils.scss';
+
+.Testimonials {
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    font-size: 2rem;
+  }
+
+}
