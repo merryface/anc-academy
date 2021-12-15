@@ -1,8 +1,6 @@
 @import '../../../utils/utils.scss';
 
-.LearningFromPilots {
-  padding-bottom: 2rem;
-  
+.LearningFromPilots {  
   &__container {
     @include container;
     display: flex;

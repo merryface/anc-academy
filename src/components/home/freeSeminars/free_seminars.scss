@@ -17,11 +17,19 @@
   &__title {
     font-size: 2rem;
     margin-bottom: 1.5rem;
+
+    @include above($phone) {
+      font-size: 3rem;
+    }
   }
 
   &__summary {
     font-size: 1.2rem;
     line-height: 1.5;
+
+    @include above($phone) {
+      font-size: 1.4rem;
+    }
   }
 
   &__cards {
@@ -29,6 +37,10 @@
     flex-direction: column;
     justify-content: center;
     gap: 4rem;
+
+    @include above($phone) {
+      gap: 8rem;
+    }
   }
 
   &__card {
@@ -41,6 +53,11 @@
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem;
+
+    @include above($phone) {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__image {
@@ -74,6 +91,10 @@
     .icon {
       height: 1.6rem;
       width: 1.6rem;
+    }
+
+    @include above($phone) {
+      margin-top: 5.5rem;
     }
   } 
 }
