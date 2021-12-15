@@ -1,7 +1,8 @@
 @import '../../../utils/utils.scss';
 
 .LearningFromPilots {
-  padding-bottom: 10rem;
+  padding-bottom: 2rem;
+  
   &__container {
     @include container;
     display: flex;
@@ -15,7 +16,10 @@
   }
 
   &__summary {
-    width: 75rem;
+
+    @include above($tablet) {
+      width: 75rem;
+    }
   }
 
   &__title {
