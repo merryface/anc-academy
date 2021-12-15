@@ -13,8 +13,8 @@
     <h2 class="Testimonials__title">Testimonials</h2>
 
     <div class="Testimoials__carousel">
-      {#each testimonials as {text, name, title}}
-      <figure class="Testimonials__testimonial">
+      {#each testimonials as {id, text, name, title}}
+      <figure class="Testimonials__testimonial" class:show={id === testimonialShowIndex}>
         <div class="icon icon-top">
           <FaQuoteLeft />
         </div>
