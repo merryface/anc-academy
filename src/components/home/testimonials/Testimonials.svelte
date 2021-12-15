@@ -1,5 +1,8 @@
 <script>
   import { testimonials } from './testimonials';
+  import FaQuoteLeft from 'svelte-icons/fa/FaQuoteLeft.svelte';
+  import FaQuoteRight from 'svelte-icons/fa/FaQuoteRight.svelte';
+
   let testimonialShowIndex = 0;
   $: console.log(testimonialShowIndex);
   
@@ -12,9 +15,19 @@
     <div class="Testimoials__carousel">
       {#each testimonials as {text, name, title}}
       <figure class="Testimonials__testimonial">
-        <blockquote class="Testimonials__text">{text}</blockquote>
+        <div class="icon icon-top">
+          <FaQuoteLeft />
+        </div>
+
+        <blockquote class="Testimonials__text">
+          {text}
+        </blockquote>
+
+        <div class="icon icon-bottom">
+          <FaQuoteRight />
+        </div>
         <figcaption class="Testimonials__authorName">{name}</figcaption>
-        <cite class="Testimonials__authortitle">{title}</cite>
+        <cite class="Testimonials__authorTitle">{title}</cite>
       </figure>
       {/each}
     </div>
