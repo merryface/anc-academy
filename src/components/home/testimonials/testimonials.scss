@@ -10,14 +10,42 @@
     margin-bottom: 3rem;
   }
 
+  &__carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__carouselItem {
+    position:absolute;
+    width: 100%;
+  }
+
   &__testimonial {
     position: relative;
     margin-bottom: 3rem;
-    opacity: 0;
+    display: none;
+
+    .icon {
+      position: absolute;
+      width: 5rem;
+      color: $primary-colour;
+      opacity: 0.2;
+    }
+
+    .icon-top {
+      top: -2rem;
+      left: 0;
+    }
+
+    .icon-bottom {
+      bottom: 4rem;
+      right: 0;
+    }
   }
 
   .show {
-    opacity: 1;
+    display: block;
   }
 
   &__text {
@@ -39,20 +67,22 @@
     font-style: italic;
   }
 
-  .icon {
-    position: absolute;
-    width: 5rem;
-    color: $primary-colour;
-    opacity: 0.2;
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 30rem;
+
+    .icon {
+      height: 2rem;
+    }
   }
 
-  .icon-top {
-    top: -2rem;
-    left: 0;
-  }
-
-  .icon-bottom {
-    bottom: 4rem;
-    right: 0;
+  &__pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
   }
 }
