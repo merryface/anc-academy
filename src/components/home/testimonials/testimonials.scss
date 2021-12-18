@@ -16,19 +16,24 @@
 
   &__carousel {
     position: relative;
-    width: 100%;
     overflow: hidden;
+    height: 35rem;
   }
 
   &__carouselItem {
     position:absolute;
-    width: 100%;
+    transition: all 0.3s ease-in-out;
+    top: 0;
+    opacity: 0;
+  }
+
+  .show {
+    opacity: 1;
   }
 
   &__testimonial {
     position: relative;
     margin-bottom: 3rem;
-    display: none;
 
     .icon {
       position: absolute;
@@ -38,7 +43,7 @@
     }
 
     .icon-top {
-      top: -2rem;
+      top: 0;
       left: 0;
     }
 
@@ -46,10 +51,6 @@
       bottom: 4rem;
       right: 0;
     }
-  }
-
-  .show {
-    display: block;
   }
 
   &__text {
@@ -92,6 +93,11 @@
 
     .icon {
       height: 2rem;
+      padding: 2rem;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     .left {
@@ -100,6 +106,13 @@
 
     .right {
       margin-left: 5rem;
+    }
+
+    .disable {
+      opacity: 0.5;
+      &:hover {
+        cursor: default;
+      }
     }
   }
 
