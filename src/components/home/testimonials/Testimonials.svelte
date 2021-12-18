@@ -5,18 +5,18 @@
   import FaChevronLeft from 'svelte-icons/fa/FaChevronLeft.svelte'
   import FaChevronRight from 'svelte-icons/fa/FaChevronRight.svelte'
 
-  let testimonialShowIndex = 0;
-  
-  let left = id => (id - testimonialShowIndex) * 100;
+  $: testimonialShowIndex = 0;
+  $: left = id => (testimonialShowIndex - id) * 100;
+  $: atEnd = testimonialShowIndex === testimonials.length - 1;
+  $: atStart = testimonialShowIndex === 0;
+
 
   let prevItem = () => {
-    if (testimonialShowIndex === 0) testimonialShowIndex = testimonials.length - 1;
-    else testimonialShowIndex -= 1;
+    if(testimonialShowIndex > 0) testimonialShowIndex -= 1;
   }
   
   let nextItem = () => {
-    if (testimonialShowIndex === testimonials.length - 1) testimonialShowIndex = 0;
-    else testimonialShowIndex += 1;
+    if(testimonialShowIndex < testimonials.length - 1) testimonialShowIndex += 1;
   }
 </script>
 
@@ -24,10 +24,10 @@
   <div class="Testimonials__container">
     <h2 class="Testimonials__title">Testimonials</h2>
 
-    <div class="Testimoials__carousel">
+    <div class="Testimonials__carousel">
       {#each testimonials as {id, text, name, title}}
-      <div class="carouselItem" style="left: {left(id)}">
-        <figure class="Testimonials__testimonial" class:show={id === testimonialShowIndex}>
+      <div class="Testimonials__carouselItem" style="left: {left(id)}vw" class:show={id === testimonialShowIndex}>
+        <figure class="Testimonials__testimonial">
           <div class="icon icon-top">
             <FaQuoteLeft />
           </div>
@@ -47,9 +47,9 @@
     </div>
 
     <div class="Testimonials__navigation">
-      <div class="icon left" on:click={prevItem}><FaChevronLeft /></div>
+      <div class="icon left" class:disable={atStart} on:click={prevItem}><FaChevronLeft /></div>
       <div class="Testimonials__pagination">{testimonialShowIndex+1}/{testimonials.length}</div>
-      <div class="icon right" on:click={nextItem}><FaChevronRight /></div>
+      <div class="icon right" class:disable={atEnd} on:click={nextItem}><FaChevronRight /></div>
     </div>
   </div>
 </section>
