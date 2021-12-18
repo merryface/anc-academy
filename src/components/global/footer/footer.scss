@@ -1,0 +1,34 @@
+@import "../../../utils/utils.scss";
+
+.Footer {
+  background: $black;
+
+  &__container {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+  }
+
+  &__copyright, &__navItem {
+    color: $white;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 0.25rem;
+  }
+  &__navItem {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .pipe:hover {
+    text-decoration: underline;
+  }
+}
