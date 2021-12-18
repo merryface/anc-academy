@@ -9,7 +9,7 @@
   import MdClose from 'svelte-icons/md/MdClose.svelte'
 </script>
 
-<section class="HeaderMobile">
+<header class="HeaderMobile">
   <div class="HeaderMobile__container">
     <img class="HeaderMobile__logo" {src} alt="white ANC logo">
     <div class="HeaderMobile__burgerMenu {menuOpen}" on:click={toggleMenu}>
@@ -34,7 +34,7 @@
       <li class="HeaderMobile__navItem"><a href="/book">Book</a></li>
     </ul>
   </div>
-</section>
+</header>
 
 <style type="text/scss">
   @import "./header-mobile.scss";
