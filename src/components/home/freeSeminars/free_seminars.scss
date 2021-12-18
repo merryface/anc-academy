@@ -109,6 +109,11 @@
     @include above($phone) {
       margin-top: 5.5rem;
     }
+
+    &:hover {
+      color: $black;
+      background: $white;
+    }
   } 
 }
 
