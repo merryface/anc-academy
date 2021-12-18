@@ -27,6 +27,9 @@
     justify-content: center;
     gap: 2rem;
 
+    @include above($phone) {
+      justify-content: flex-start;
+    }
   }
 
   &__icon {
