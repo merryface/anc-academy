@@ -18,6 +18,14 @@
     position: relative;
     overflow: hidden;
     height: 35rem;
+
+    @include above($phone) {
+      height: 36rem;
+    }
+
+    @include above($tablet) {
+      height: 30rem;
+    }
   }
 
   &__carouselItem {
@@ -93,10 +101,14 @@
 
     .icon {
       height: 2rem;
-      padding: 2rem;
+      width: 2rem;
+      padding: 0.7rem;
+      border-radius: 100%;
 
       &:hover {
         cursor: pointer;
+        background: $black;
+        color: $white;
       }
     }
 
@@ -112,6 +124,8 @@
       opacity: 0.5;
       &:hover {
         cursor: default;
+        background: none;
+        color: $black;
       }
     }
   }
