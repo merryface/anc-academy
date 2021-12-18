@@ -7,7 +7,7 @@ export const testimonials = [
   },
   {
     id: 1,
-    text: "ANC's training sessions have helped me discover a passion for flying and flight simulators I didn't know I had. Starting from scratch, they taught me how to operate an aircraft using proper procedures. Professional teaching and constant feedback from their amazing and friendly instructors, in group and one-on-one sessions, allowed me to avoid some of the pitfalls of uneducated simulator flying, and gave me a much steeper learning curve than I could have hoped for. I’ll be extremely grateful for everything I learned here when I go to a real flight school.",
+    text: "ANC's sessions have helped me discover a passion for flying and flight simulators I didn't know I had. Starting from scratch, they taught me how to operate an aircraft using proper procedures. Professional teaching and constant feedback from their amazing and friendly instructors in group and one-on-one sessions, have taught me how to the pitfalls of uneducated simulator flying, and gave me a much steeper learning curve than I could have hoped for. I’m grateful for everything I learned here when I go to a real flight school.",
     name: "Martin",
     title: "Aerospace Engineering Student"
   },
