@@ -1,5 +1,7 @@
 <script>
   import { Router, Link } from 'svelte-routing';
+  import { headerNavItems } from '../headerNavItems';
+
   let open = false;
   const toggleMenu = () => open = !open;
   const openClass = "HeaderMobile__navMenu-active";
@@ -13,11 +15,9 @@
     <a href="/"><img class="Header__logo" {src} alt="white ANC logo"></a>
     <Router>
     <nav class="Header__navItems">
-      <li class="Header__navItem"><a href="/">Home</a></li>
-      <Link class="Header__navItem" to="about">About</Link>
-      <li class="Header__navItem"><a href="/pricing">Pricing</a></li>
-      <li class="Header__navItem"><a href="/seminar">Seminar</a></li>
-      <li class="Header__navItem"><a href="/book">Book</a></li>
+      {#each headerNavItems as {label, url}}
+      <Link class="Header__navItem" to={url}>{label}</Link>
+      {/each}
     </nav>
     </Router>
   </div>
