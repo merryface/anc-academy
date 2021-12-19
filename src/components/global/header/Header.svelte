@@ -2,11 +2,6 @@
   import { Router, Link } from 'svelte-routing';
   import { headerNavItems } from '../headerNavItems';
 
-  let open = false;
-  const toggleMenu = () => open = !open;
-  const openClass = "HeaderMobile__navMenu-active";
-  $: isOpen = open ? openClass : '';
-
   let src = "./assets/logo_white.png";
 </script>
 

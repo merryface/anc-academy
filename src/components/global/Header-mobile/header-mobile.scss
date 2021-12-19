@@ -91,20 +91,19 @@
   }
 
   &__navItems {
+    display: flex;
+    flex-direction: column;
     width: 80vw;
     margin-left: 3rem;
     margin-right: 3rem;
   }
 
-  &__navItem {
+  :global(.HeaderMobile__navItem) {
     padding-bottom: 0.5rem;
     padding-top: 1rem;
     border-bottom: 1px $white solid;
-
-    a {
-      font-size: 2rem;
-      text-decoration: none;
-      color: $white;
-    }
+    font-size: 2rem;
+    text-decoration: none;
+    color: $white;
   }
 }
