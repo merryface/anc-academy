@@ -1,4 +1,7 @@
 <script>
+  import { Router, Link } from 'svelte-routing';
+  import { headerNavItems } from '../headerNavItems';
+
   let open = false;
   const toggleMenu = () => open = !open;
   const openClass = "HeaderMobile__navMenu-active";
@@ -26,13 +29,13 @@
         <MdClose />
       </div>
     </div>
-    <ul class="HeaderMobile__navItems">
-      <li class="HeaderMobile__navItem"><a href="/">Home</a></li>
-      <li class="HeaderMobile__navItem"><a href="/about">About</a></li>
-      <li class="HeaderMobile__navItem"><a href="/pricing">Pricing</a></li>
-      <li class="HeaderMobile__navItem"><a href="/seminar">Seminar</a></li>
-      <li class="HeaderMobile__navItem"><a href="/book">Book</a></li>
-    </ul>
+    <Router>
+    <nav class="HeaderMobile__navItems">
+      {#each headerNavItems as {label, url}}
+      <Link class="HeaderMobile__navItem" to={url} on:click={toggleMenu}>{label}</Link>
+      {/each}
+    </nav>
+    </Router>
   </div>
 </header>
 

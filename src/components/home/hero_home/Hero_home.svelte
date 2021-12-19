@@ -1,5 +1,6 @@
 <script>
   import IoIosAirplane from 'svelte-icons/io/IoIosAirplane.svelte'
+  import { Link } from 'svelte-routing';
   const src = "./assets/homeHeroVideo.mp4"
 </script>
 
@@ -14,20 +15,20 @@
     <div class="HeroHome__cta">
       <div class="HeroHome__ctaItem">
         <h2 class="HeroHome__title">Passionate flight simmers wanting Simulator instruction</h2>
-        <a href="/pricing-sim" class="HeroHome__link">Simulator Instruction
+        <Link to="pricing-sim" class="HeroHome__link">Simulator Instruction
           <div class="HeroHome__icon">
             <IoIosAirplane />
           </div>
-        </a>
+        </Link>
       </div>
 
       <div class="HeroHome__ctaItem">
         <h2 class="HeroHome__title">Pilots in training wanting supplemental online instruction</h2>
-        <a href="/pricing-sim" class="HeroHome__link">Online Tuition
+        <Link to="pricing-sim" class="HeroHome__link">Online Tuition
           <div class="HeroHome__icon">
             <IoIosAirplane />
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   </div>  

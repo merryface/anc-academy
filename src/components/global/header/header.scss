@@ -23,12 +23,10 @@
     display: flex;
     gap: 2.5rem;
   }
+}
 
-  &__navItem {
-    a {
-      font-size: 1.4rem;
-      text-decoration: none;
-      color: $white;
-    }
-  }
+:global(.Header__navItem) {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: $white;
 }
