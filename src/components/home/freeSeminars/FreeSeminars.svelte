@@ -1,5 +1,6 @@
 <script>
   import IoIosAirplane from 'svelte-icons/io/IoIosAirplane.svelte'
+  import { Link } from 'svelte-routing';
 
   const selectImage = (image, size) => './assets/seminarImages/' + image + "_" + size + ".jpg";
 
@@ -44,10 +45,10 @@
       </div>
     </div>
 
-    <a href="/seminars" class="FreeSeminars__link">
+    <Link to="seminars" class="FreeSeminars__link">
       Find the Next Seminar
       <div class="icon"><IoIosAirplane /></div>
-    </a>
+    </Link>
   </div>
 </section>
 

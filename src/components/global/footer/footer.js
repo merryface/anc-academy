@@ -2,16 +2,16 @@ export const footerNav = [
   {
     id: 0,
     label: "About",
-    url: "/about",
+    url: "about",
   },
   {
     id: 1,
     label: "Terms & Conditions",
-    url: "/terms-and-conditions",
+    url: "terms-and-conditions",
   },
   {
     id: 2,
     label: "Join Us",
-    url: "/join-us",
+    url: "join-us",
   },
 ] 
