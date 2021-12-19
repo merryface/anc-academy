@@ -12,7 +12,7 @@
     gap:2rem;
   }
 
-  &__copyright, &__navItem {
+  &__copyright, :global(.Footer__navItem) {
     color: $white;
     font-size: 1.2rem;
 
@@ -37,7 +37,8 @@
       gap: 0.75rem;
     }
   }
-  &__navItem {
+
+  :global(.Footer__navItem) {
     text-decoration: none;
 
     &:hover {
