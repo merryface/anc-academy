@@ -1,3 +1,7 @@
+<script>
+  import AboutHero from "./AboutHero/AboutHero.svelte";
+</script>
+
 <section>
-  hello there
+  <AboutHero />
 </section>
