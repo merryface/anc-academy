@@ -1,5 +1,5 @@
 <script>
-  import { testimonials } from './testimonials';
+  import { testimonials, content } from './testimonials';
   import FaQuoteLeft from 'svelte-icons/fa/FaQuoteLeft.svelte';
   import FaQuoteRight from 'svelte-icons/fa/FaQuoteRight.svelte';
   import FaChevronLeft from 'svelte-icons/fa/FaChevronLeft.svelte'
@@ -22,7 +22,7 @@
 
 <section class="Testimonials">
   <div class="Testimonials__container">
-    <h2 class="Testimonials__title">Testimonials</h2>
+    <h2 class="Testimonials__title">{content.title}</h2>
 
     <div class="Testimonials__carousel">
       {#each testimonials as {id, text, name, title}}
