@@ -1,14 +1,7 @@
 <script>
   import IoIosAirplane from 'svelte-icons/io/IoIosAirplane.svelte'
   import { Link } from 'svelte-routing';
-
-  const selectImage = (image, size) => './assets/seminarImages/' + image + "_" + size + ".jpg";
-
-  const setImage = (image, width) => {
-    if (width < 970) return selectImage(image, "mobile");
-    if (width > 970) return selectImage(image, "tablet");
-    if (width > 1100) return selectImage(image, "mobile");
-  }
+  import { setImage, content, cards } from './FreeSeminars.js';
 
   $: innerWidth = 0;
 </script>
@@ -20,33 +13,23 @@
 <section class="FreeSeminars">
   <div class="FreeSeminars__container">
     <div class="FreeSeminars__text">
-      <h1 class="FreeSeminars__title">Free Seminars</h1>
-      <p class="FreeSeminars__summary">A.N.C Academy runs regular online seminars so that newcomers can experience what participating in sessions with us is like. Sign up below if you are interested in joining one of these sessions.</p>
+      <h1 class="FreeSeminars__title">{content.title}</h1>
+      <p class="FreeSeminars__summary">{content.summary}</p>
     </div>
 
     <div class="FreeSeminars__cards">
+      {#each cards as {cardTitle, imageSrc, alt}}
       <div class="FreeSeminars__card">
-        <h2 class="FreeSeminars__cardTitle">IFR Flying Introduction</h2>
+        <h2 class="FreeSeminars__cardTitle">{cardTitle}</h2>
         <div class="FreeSeminars__image">
-          <img src="{setImage("G1000-closeup", innerWidth)}" alt="A320 FCU">
+          <img src="{setImage(imageSrc, innerWidth)}" {alt}>
         </div>
       </div>
-      <div class="FreeSeminars__card">
-        <h2 class="FreeSeminars__cardTitle">A320 Flying Introduction</h2>
-        <div class="FreeSeminars__image">
-          <img src="{setImage("rainVFR", innerWidth)}" alt="A320 FCU">
-        </div>
-      </div>
-      <div class="FreeSeminars__card">
-        <h2 class="FreeSeminars__cardTitle">VFR Navigation Introduction</h2>
-        <div class="FreeSeminars__image">
-          <img src="{setImage("FCU-closeup", innerWidth)}" alt="A320 FCU">
-        </div>
-      </div>
+      {/each}
     </div>
 
-    <Link to="seminars" class="FreeSeminars__link">
-      Find the Next Seminar
+    <Link to={content.link.url} class="FreeSeminars__link">
+      {content.link.linkLabel}
       <div class="icon"><IoIosAirplane /></div>
     </Link>
   </div>

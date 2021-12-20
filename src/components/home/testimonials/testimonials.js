@@ -11,4 +11,9 @@ export const testimonials = [
     name: "Martin",
     title: "Aerospace Engineering Student"
   },
-] 
+]
+
+export const content = {
+  title: "Testimonials",
+  
+}
