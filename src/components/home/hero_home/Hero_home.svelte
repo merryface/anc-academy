@@ -1,35 +1,28 @@
 <script>
   import IoIosAirplane from 'svelte-icons/io/IoIosAirplane.svelte'
   import { Link } from 'svelte-routing';
-  const src = "./assets/homeHeroVideo.mp4"
+  import { videoUrl, ctaItems } from './Hero_home';
 </script>
 
 <section class="HeroHome">
   <div class="HeroHome__video">
-    <video class="HeroHome__videoContent" autoplay muted loop id="myVideo">
-      <source {src} type="video/mp4">
+    <video class="HeroHome__videoContent" autoplay muted loop>
+      <source src={videoUrl} type="video/mp4">
     </video>
   </div>
 
   <div class="HeroHome__container">
     <div class="HeroHome__cta">
-      <div class="HeroHome__ctaItem">
-        <h2 class="HeroHome__title">Passionate flight simmers wanting Simulator instruction</h2>
-        <Link to="pricing-sim" class="HeroHome__link">Simulator Instruction
-          <div class="HeroHome__icon">
-            <IoIosAirplane />
-          </div>
-        </Link>
-      </div>
-
-      <div class="HeroHome__ctaItem">
-        <h2 class="HeroHome__title">Pilots in training wanting supplemental online instruction</h2>
-        <Link to="pricing-sim" class="HeroHome__link">Online Tuition
-          <div class="HeroHome__icon">
-            <IoIosAirplane />
-          </div>
-        </Link>
-      </div>
+      {#each ctaItems as {title, url, linkLabel}}
+        <div class="HeroHome__ctaItem">
+          <h2 class="HeroHome__title">{title}</h2>
+          <Link to={url} class="HeroHome__link">{linkLabel}
+            <div class="HeroHome__icon">
+              <IoIosAirplane />
+            </div>
+          </Link>
+        </div>
+      {/each}
     </div>
   </div>  
 </section>
