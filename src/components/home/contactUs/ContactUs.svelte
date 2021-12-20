@@ -2,21 +2,22 @@
   import FaYoutube from 'svelte-icons/fa/FaYoutube.svelte'
   import FaFacebook from 'svelte-icons/fa/FaFacebook.svelte'
   import FaInstagram from 'svelte-icons/fa/FaInstagram.svelte'
-
-  const email= "admin@anc.co.uk";
-  const youtube = "https://www.youtube.com/channel/UCjkotIU0LsTjMTkYap6cjvw";
-  const facebook = "https://www.facebook.com/home.php";
-  const instagram = "https://www.instagram.com/";
+  import { title, email, socialMediaUrl } from './ContactUs.js';
 </script>
 
 <section class="ContactUs">
   <div class="ContactUs__container">
-    <h2 class="ContactUs__title">Contact</h2>
+    <h2 class="ContactUs__title">{title}</h2>
     <a href="mailto:{email}" class="ContactUs__email">Email: {email}</a>
     <div class="ContactUs__socialMedia">
-      <a href="{youtube}" target="_blank"><div class="ContactUs__icon"><FaYoutube /></div></a>
-      <a href="{facebook}" target="_blank"><div class="ContactUs__icon"><FaFacebook /></div></a>
-      <a href="{instagram}" target="_blank"><div class="ContactUs__icon"><FaInstagram /></div></a>
+      {#each socialMediaUrl as {url, name}}
+      <a href="{url}" target="_blank"><div class="ContactUs__icon">
+        {#if name === "facebook"} <FaFacebook />
+        {:else if name === "youtube"} <FaYoutube />
+        {:else if name === "instagram"} <FaInstagram />
+        {/if}
+      </div></a>
+      {/each}
     </div>
   </div>
 </section>

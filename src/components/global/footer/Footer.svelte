@@ -6,7 +6,7 @@
 
 <footer class="Footer">
   <div class="Footer__container">
-    <p class="Footer__copyright">© 2021, A.N.C Academy</p>
+    <p class="Footer__copyright">© {new Date().getFullYear() }, A.N.C Academy</p>
     <Router>
     <nav class="Footer__nav">
       {#each footerNav as {id, label, url}}
