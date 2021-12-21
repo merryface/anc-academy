@@ -1,0 +1,54 @@
+@import '../../../utils/utils.scss';
+
+.WhoOurClientsAre {
+  background-color: $black;
+  color: $white;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 4.5rem
+  }
+
+  &__clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+
+    @include above($phone) {
+      gap: 9rem;
+    }
+
+    @include above($tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__client {
+    @include above($tablet) {
+      width: 50%;
+    }
+  }
+
+  &__clientName {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+    @include above($tablet) {
+      text-align: center;
+    }
+  }
+
+  &__clientSummary {
+    font-size: 1.4rem;
+    line-height: 1.5;
+
+    @include above($tablet) {
+      text-align: center;
+    }
+  }
+}
