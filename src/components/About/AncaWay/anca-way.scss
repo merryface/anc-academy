@@ -1,6 +1,10 @@
 @import '../../../utils/utils.scss';
 
 .AncaWay {
+  $image-height: 21rem;
+  $image-height-desktop: 25rem;
+
+  position: relative;
   padding-bottom: 5rem;
   
   &__container {
@@ -33,6 +37,11 @@
     @include above($phone) {
       font-size: 2rem;
     }
+
+
+    @include above($tablet) {
+      margin-top: -1rem;
+    }
   }
 
   &__bottomText {
@@ -57,18 +66,18 @@
   }
 
   &__image {
+    position: absolute;
+    left: 0;
     width: 100vw;
-    object-fit: contain;
-    margin-left: -1.6rem;
-    margin-bottom: 2rem;
+    height: $image-height;
+    object-fit: cover;
 
     @include above($phone) {
-      margin-bottom: 5rem;
-      margin-left: -4rem;
     }
 
     @include above($tablet) {
-      margin-left: -5.9rem;
+      height: $image-height-desktop;
+      margin-bottom: calc(#{$image-height-desktop} + 5rem);
     }
   }
 
@@ -77,16 +86,21 @@
     padding-left: 1.5rem;
     border-left: 3px solid $primary-colour;
     margin-bottom: 3rem;
+    margin-top: calc(#{$image-height} + 2rem + 3rem);
+
 
     @include above($phone) {
       max-width: 40rem;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 4.5rem;
+      margin-top: calc(#{$image-height} + 5rem + 3rem);
+
     }
 
     @include above($tablet) {
       margin-bottom: 6rem;
+      margin-top: calc(#{$image-height-desktop} + 5rem + 7rem);
     }
   }
 
