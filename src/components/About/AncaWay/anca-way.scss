@@ -1,0 +1,39 @@
+@import '../../../utils/utils.scss';
+
+.AncaWay {
+  &__container {
+    @include container;
+  }
+
+  &__topText {
+    margin-bottom: 5rem;
+  }
+
+  &__titleOne {
+    font-size: 3rem;
+    word-spacing: 100vw;
+    margin-bottom: 4rem;
+  }
+
+  &__titleTwo {
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__mainText {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  &__bottomText {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 4rem;
+  }
+
+  &__colouredText {
+    color: $primary-colour;
+    margin-bottom: 0.3rem;
+  }
+
+}
