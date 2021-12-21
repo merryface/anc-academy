@@ -13,7 +13,7 @@ import { content, teachingSteps } from "./AncaWay";
 
     <div class="AncaWay__bottomText">
       <h2 class="AncaWay__colouredText">{content.colouredText}</h2>
-      <h2 class="AncaWay__blackText">{content.blacktext}</h2>
+      <h2 class="AncaWay__blackText">{content.blackText}</h2>
     </div>
 
     <img src={content.image.url} alt={content.image.alt} class="AncaWay__image" />
@@ -31,5 +31,5 @@ import { content, teachingSteps } from "./AncaWay";
 </section>
 
 <style type="text/scss">
-
+ @import './anca-way.scss';
 </style>

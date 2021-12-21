@@ -5,7 +5,7 @@ export const content = {
   colouredText: "Specialised real-world oriented training philosophy",
   blackText: "We use official training guidelines as well as a modern teaching approach to provide our clients with the best training and expereince possible.",
   image: {
-    url: "",
+    url: "../assets/da62CockpitBanner.jpg",
     alt: "Da62 cockpit",
   },
   infoText: "Our four steps to ensuring mastery and understanding means that our clients get the best out of their training with us."
