@@ -1,6 +1,8 @@
 @import '../../../utils/utils.scss';
 
 .AncaWay {
+  padding-bottom: 5rem;
+  
   &__container {
     @include container;
   }
@@ -36,4 +38,41 @@
     margin-bottom: 0.3rem;
   }
 
+  &__image {
+    width: 100vw;
+    object-fit: contain;
+    margin-left: -1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  &__infoText {
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+    border-left: 3px solid $primary-colour;
+    margin-bottom: 3rem;
+  }
+
+  &__teachingSteps {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__teachingStep {
+    padding: 2rem;
+    background-color: rgba($primary-colour, 0.3);
+  }
+
+  &__stepTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__stepDescription {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
 }
