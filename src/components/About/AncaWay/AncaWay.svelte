@@ -21,7 +21,7 @@ import { content, teachingSteps } from "./AncaWay";
 
     <div class="AncaWay__teachingSteps">
       {#each teachingSteps as step}
-        <div class="AncaWay__TeachingStep">
+        <div class="AncaWay__teachingStep">
           <h3 class="AncaWay__stepTitle">{step.stepTitle}</h3>
           <p class="AncaWay__stepDescription">{step.stepDescription}</p>
         </div>
