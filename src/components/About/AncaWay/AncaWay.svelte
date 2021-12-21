@@ -31,5 +31,5 @@ import { content, teachingSteps } from "./AncaWay";
 </section>
 
 <style type="text/scss">
- @import './anca-way.scss';
+  @import './anca-way.scss';
 </style>
