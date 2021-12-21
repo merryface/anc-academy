@@ -76,8 +76,10 @@
     }
 
     @include above($tablet) {
+      position: static;
+      width: 100%;
       height: $image-height-desktop;
-      margin-bottom: calc(#{$image-height-desktop} + 5rem);
+      margin-bottom: 5rem;
     }
   }
 
@@ -100,7 +102,7 @@
 
     @include above($tablet) {
       margin-bottom: 6rem;
-      margin-top: calc(#{$image-height-desktop} + 5rem + 7rem);
+      margin-top: 0;
     }
   }
 
