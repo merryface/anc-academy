@@ -25,6 +25,10 @@
   &__mainText {
     font-size: 1.4rem;
     line-height: 1.5;
+
+    @include above($phone) {
+      font-size: 2rem;
+    }
   }
 
   &__bottomText {
@@ -36,6 +40,10 @@
   &__colouredText {
     color: $primary-colour;
     margin-bottom: 0.3rem;
+
+    @include above($phone) {
+    margin-bottom: 2.5rem;
+    }
   }
 
   &__image {
@@ -43,6 +51,11 @@
     object-fit: contain;
     margin-left: -1.6rem;
     margin-bottom: 2rem;
+
+    @include above($phone) {
+      margin-bottom: 5rem;
+      margin-left: -4rem;
+    }
   }
 
   &__infoText {
@@ -50,6 +63,13 @@
     padding-left: 1.5rem;
     border-left: 3px solid $primary-colour;
     margin-bottom: 3rem;
+
+    @include above($phone) {
+      max-width: 40rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 4.5rem;
+    }
   }
 
   &__teachingSteps {
