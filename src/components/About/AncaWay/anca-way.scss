@@ -20,6 +20,12 @@
     }
   }
 
+  &__title {
+    @include above($tablet) {
+      max-width: 30rem;
+    }
+  }
+
   &__titleOne {
     font-size: 3rem;
     word-spacing: 100vw;
@@ -38,9 +44,10 @@
       font-size: 2rem;
     }
 
-
     @include above($tablet) {
       margin-top: -1rem;
+      max-width: 50vw;
+
     }
   }
 
@@ -52,7 +59,7 @@
     @include above($tablet) {
       font-size: 3rem;
       text-align: center;
-      margin-bottom: 9rem;
+      margin-bottom: 5rem;
     }
   }
 
