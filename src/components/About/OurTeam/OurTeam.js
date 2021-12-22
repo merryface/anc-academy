@@ -1,6 +1,6 @@
 export const content = {
   title: "Our Team",
-  subtitle: "Meet our pilots experts who are here to help our clients through their training.",
+  subtitle: "Meet our pilot experts who are here to help our clients through their training.",
   teamMembers: [
     {
       image: {

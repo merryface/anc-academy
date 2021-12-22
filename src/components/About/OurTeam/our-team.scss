@@ -1,0 +1,44 @@
+@import '../../../utils/utils.scss';
+
+.OurTeam {
+  background-color: $primary-colour;
+  color: $white;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  &__teamMembers {
+    display: flex;
+    flex-direction: column;
+    gap:4.5rem;
+  }
+
+  &__memberImage {
+    width: 100%;
+    max-width: 30rem;
+    height: 33rem;
+    object-fit: cover;
+    margin-bottom: 2.5rem;
+  }
+
+  &__name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__bio {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+}
