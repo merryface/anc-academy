@@ -1,0 +1,60 @@
+@import '../../../utils/utils.scss';
+
+.OurServices {
+  $image-height: 21rem;
+  position: relative;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 1.4rem;
+
+    @include above($tablet) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.4rem;
+    padding-left:1.5rem;
+    border-left: 3px solid $primary-colour;
+    margin-bottom: 3rem;
+
+    @include above($tablet) {
+      font-size: 2rem;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: $image-height;
+    object-fit: cover;
+  }
+
+  &__services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: calc($image-height + 4rem + 3rem);
+    margin-bottom: 3rem;
+  }
+
+  &__serviceTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__serviceText {
+    font-size: 1.4rem;
+  }
+
+  &__bottomNote {
+    font-size: 1.4rem;
+  }
+}
