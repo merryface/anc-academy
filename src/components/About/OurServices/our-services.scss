@@ -29,6 +29,24 @@
   }
 
   &__services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
     margin-top: calc($image-height + 4rem + 3rem);
+    margin-bottom: 3rem;
+  }
+
+  &__serviceTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__serviceText {
+    font-size: 1.4rem;
+  }
+
+  &__bottomNote {
+    font-size: 1.4rem;
   }
 }
