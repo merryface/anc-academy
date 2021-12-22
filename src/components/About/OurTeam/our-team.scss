@@ -16,12 +16,38 @@
   &__subtitle {
     font-size: 1.4rem;
     margin-bottom: 2rem;
+    line-height: 1.5;
   }
 
   &__teamMembers {
     display: flex;
     flex-direction: column;
     gap:4.5rem;
+
+    @include above($phone) {
+      gap:6rem;
+    }
+
+    @include above($tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+  }
+
+  &__teamMember {
+    display: flex;
+    flex-direction: column;
+
+    @include above($phone) {
+      align-items: center;
+      text-align: center;
+    }
+
+    @include above($tablet) {
+      max-width: 30rem;
+    }
   }
 
   &__memberImage {
@@ -30,6 +56,18 @@
     height: 33rem;
     object-fit: cover;
     margin-bottom: 2.5rem;
+    align-self: center;
+
+    @include above($phone) {
+      width: 100%;
+      max-width: 35rem;
+      height: 33rem;
+    }
+
+    @include above($tablet) {
+      width: 100%;
+      height: 30rem;
+    }
   }
 
   &__name {
