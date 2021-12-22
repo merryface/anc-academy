@@ -12,6 +12,16 @@
   import MdClose from 'svelte-icons/md/MdClose.svelte'
 </script>
 
+<svelte:head>
+  {#if open}
+    <style>
+      body {
+      overflow: hidden;
+      }
+    </style>
+  {/if}
+</svelte:head>
+
 <header class="HeaderMobile">
   <div class="HeaderMobile__container">
     <img class="HeaderMobile__logo" {src} alt="white ANC logo">
