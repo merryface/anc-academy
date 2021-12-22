@@ -2,7 +2,8 @@
   import AboutHero from "./AboutHero/AboutHero.svelte";
   import AncaWay from "./AncaWay/AncaWay.svelte";
   import Ourservices from "./OurServices/Ourservices.svelte";
-  import WhoOurClientsAre from "./whoOurClientsAre/WhoOurClientsAre.svelte";
+  import OurTeam from "./OurTeam/OurTeam.svelte";
+  import WhoOurClientsAre from "./WhoOurClientsAre/WhoOurClientsAre.svelte";
 </script>
 
 <main>
@@ -10,4 +11,5 @@
   <AncaWay />
   <WhoOurClientsAre />
   <Ourservices />
+  <OurTeam />
 </main>
