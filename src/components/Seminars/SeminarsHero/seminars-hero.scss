@@ -1,6 +1,7 @@
 @import '../../../utils/utils.scss';
 
 .FreeSeminars {
+  position: relative;
   $hero-height: 70vh;
 
   position: relative;
@@ -10,15 +11,17 @@
 
   &__container {
     @include container;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
   }
 
   &__text {
-    z-index: 10;
-    margin-top: 90%;
+    width: 100%;
+    margin-top: 50vh;
+
+    @include above($phone) {
+      text-align: center;
+      margin-top: 40vh;
     }
+  }
 
   &__title {
     font-size: 5rem;
