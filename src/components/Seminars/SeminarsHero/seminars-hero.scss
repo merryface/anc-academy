@@ -1,0 +1,33 @@
+@import '../../../utils/utils.scss';
+
+.FreeSeminars {
+  position: relative;
+  $hero-height: 70vh;
+
+  position: relative;
+  height: $hero-height;
+  background-size: cover;
+  color: $white;
+
+  &__container {
+    @include container;
+  }
+
+  &__text {
+    width: 100%;
+    margin-top: 45vh;
+
+    @include above($phone) {
+      text-align: center;
+      margin-top: 40vh;
+    }
+  }
+
+  &__title {
+    font-size: 5rem;
+  }
+
+  &__subtitle {
+    font-size: 1.4rem;
+  }
+}
