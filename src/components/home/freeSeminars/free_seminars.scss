@@ -118,10 +118,10 @@
 } 
 
 .FreeSeminars__triangleTop {
-  width: 100%; 
+  width: 0; 
   height: 0; 
   border-bottom: 5rem solid $black; 
-  border-right: 100% solid transparent;
+  border-right: 100vw solid transparent;
 
   @include above($tablet) {
     border-bottom: 7rem solid $black; 
@@ -133,10 +133,12 @@
 }
 
 .FreeSeminars__triangleBottom {
+  position: absolute;
+  right:0;
   width: 0; 
   height: 0; 
   border-bottom: 5rem solid $black; 
-  border-right: 99.5vw solid transparent;
+  border-right: 100vw solid transparent;
   transform: rotate(180deg);
 
   @include above($tablet) {
