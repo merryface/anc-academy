@@ -20,5 +20,7 @@ export const content = {
       imageSrc: "./assets/seminarIMages/FCU-closeup_tablet.jpg",
       imageAlt: "A320 FCU at dusk",
     },
-  ]
+  ],
+  linkLabel: "Find the next seminar",
+  linkUrl: "/",
 }
