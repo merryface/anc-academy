@@ -1,0 +1,73 @@
+@import '../../../utils/utils.scss';
+
+.SeminarList {
+  &__container {
+    @include container;
+  }
+
+  &__text {
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  &__summary {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  &__seminars {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  &__seminarTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__seminarSummary {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  &__seminarImage {
+    width: 100%;
+    border: $black 1px solid;
+  }
+}
+
+:global(.SeminarList__link) {
+  color: $black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid $black;
+  width: 16rem;
+  font-size: 1.4rem;
+  margin: auto;
+  margin-top: 3rem;
+  
+  .icon {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+  
+  @include above($phone) {
+    margin-top: 5.5rem;
+  }
+  
+  &:hover {
+    color: $white;
+    background: $black;
+  }
+}
