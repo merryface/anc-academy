@@ -4,6 +4,15 @@
   position: relative;
   color: $white;
   background-color: $black;
+  margin-top: $triangle-height;
+
+  @include above($tablet) {
+    margin-top: $triangle-height-tablet;
+  }
+
+  @include above($desktop) {
+    margin-top: $triangle-height-desktop;
+  }
 
   &__container {
     @include container;
@@ -118,17 +127,19 @@
 } 
 
 .FreeSeminars__triangleTop {
+  position: absolute;
+  right:0;
   width: 0; 
   height: 0; 
-  border-bottom: 5rem solid $black; 
+  border-bottom: $triangle-height solid $black; 
   border-right: 100vw solid transparent;
 
   @include above($tablet) {
-    border-bottom: 7rem solid $black; 
+    border-bottom: $triangle-height-tablet solid $black; 
   }
 
   @include above($desktop) {
-    border-bottom: 10rem solid $black; 
+    border-bottom: $triangle-height-desktop solid $black; 
   }
 }
 
@@ -137,15 +148,15 @@
   right:0;
   width: 0; 
   height: 0; 
-  border-bottom: 5rem solid $black; 
+  border-bottom: $triangle-height solid $black; 
   border-right: 100vw solid transparent;
   transform: rotate(180deg);
 
   @include above($tablet) {
-    border-bottom: 7rem solid $black; 
+    border-bottom: $triangle-height-tablet solid $black; 
   }
 
   @include above($desktop) {
-    border-bottom: 10rem solid $black; 
+    border-bottom: $triangle-height-desktop solid $black; 
   }
 }
