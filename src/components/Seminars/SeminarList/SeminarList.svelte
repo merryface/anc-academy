@@ -6,7 +6,7 @@
   <div class="SeminarList__container">
     <div class="SeminarList__text">
       <h2 class="SeminarList__title">{content.title}</h2>
-      <p class="SeminarList__summary">content.summary</p>
+      <p class="SeminarList__summary">{content.summary}</p>
     </div>
 
     <div class="SeminarList__seminars">
