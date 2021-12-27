@@ -14,11 +14,11 @@
     <div class="SeminarList__seminars">
       {#each content.seminars as seminar}
       <div class="SeminarList__seminar">
-        <div class="SeminarList__seminarText">
-          <h3 class="SeminarList__seminarTitle">{seminar.title}</h3>
+        <h3 class="SeminarList__seminarTitle">{seminar.title}</h3>
+        <div class="SeminarList__seminarContent">
           <p class="SeminarList__seminarSummary">{seminar.summary}</p>
+          <img src={seminar.imageSrc} alt={seminar.imageAlt} class="SeminarList__seminarImage">
         </div>
-        <img src={seminar.imageSrc} alt={seminar.imageAlt} class="SeminarList__seminarImage">
       </div>
       {/each}
     </div>
