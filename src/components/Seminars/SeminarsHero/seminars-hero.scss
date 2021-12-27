@@ -4,9 +4,8 @@
   position: relative;
   $hero-height: 70vh;
 
-  position: relative;
   height: $hero-height;
-  background-size: cover;
+  background-size: cover !important;
   color: $white;
 
   &__container {

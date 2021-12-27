@@ -3,7 +3,7 @@ const selectImage = (image, size) => './assets/seminarImages/' + image + "_" + s
 export const setImage = (image, width) => {
   if (width < 970) return selectImage(image, "mobile");
   if (width > 970) return selectImage(image, "tablet");
-  if (width > 1100) return selectImage(image, "mobile");
+  if (width > 1100) return selectImage(image, "desktop");
 }
 
 export const content = {

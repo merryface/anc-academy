@@ -9,10 +9,8 @@
 </script>
 
 <Router {url}>
-  <div>
-    <Route path="/" component={Home} />
-    <Route path="about" component={About} />
-    <Route path="seminars" component={Seminars} />
-    <Route component={NotFound} />
-  </div>
+  <Route path="/" component={Home} />
+  <Route path="about" component={About} />
+  <Route path="seminars" component={Seminars} />
+  <Route component={NotFound} />
 </Router>
