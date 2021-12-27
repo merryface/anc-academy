@@ -1,6 +1,16 @@
 @import '../../../utils/utils.scss';
 
 .Testimonials {
+  margin-top: $triangle-height;
+
+  @include above($tablet) {
+    margin-top: $triangle-height-tablet;
+  }
+
+  @include above($desktop) {
+    margin-top: $triangle-height-desktop;
+  }
+
   &__container {
     @include container;
   }

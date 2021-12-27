@@ -34,6 +34,11 @@
     width: 100vw;
     height: $image-height;
     object-fit: cover;
+
+    @include above($tablet) {
+      position: static;
+      width: 100%;
+    }
   }
 
   &__services {
@@ -43,6 +48,10 @@
     gap: 3rem;
     margin-top: calc($image-height + 4rem + 3rem);
     margin-bottom: 3rem;
+
+    @include above($tablet) {
+      margin-top: 3rem;
+    }
   }
 
   &__serviceTitle {
