@@ -1,0 +1,120 @@
+@import '../../../utils/utils.scss';
+
+.SeminarList {
+  &__container {
+    @include container;
+  }
+
+  &__text {
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  &__summary {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  &__seminars {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    @include above($tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__seminar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__seminarContent {
+    display: flex;
+    flex-direction: column;
+
+    @include above($phone) {
+      flex-direction: row;
+    }
+
+    @include above($tablet) {
+      flex-direction: column-reverse;
+      gap: 2.5rem;
+    }
+  }
+
+  &__seminarTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__seminarSummary {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  &__seminarImage {
+    width: 100%;
+    min-height: 17rem;
+    border: $black 1px solid;
+    object-fit: cover;
+
+    @include above($phone) {
+      margin-top: -3rem;
+      width: 40%;
+      height: 100%;
+      margin-left: 2rem;
+    }
+
+    @include above($tablet) {
+      margin-top: 0;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}
+
+:global(.SeminarList__link) {
+  color: $black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid $black;
+  width: 16rem;
+  font-size: 1.4rem;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  
+  .icon {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+  
+  @include above($phone) {
+    margin-top: -3rem;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  @include above($tablet) {
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
+  
+  &:hover {
+    color: $white;
+    background: $black;
+  }
+}
