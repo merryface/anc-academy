@@ -12,6 +12,6 @@
   </div>
 </section>
 
-<style type="text/scss">
+<style lang="scss">
   @import './about_hero.scss';
 </style>

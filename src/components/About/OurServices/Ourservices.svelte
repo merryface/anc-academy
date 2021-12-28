@@ -20,6 +20,6 @@
   </div>
 </section>
 
-<style type="text/scss">
+<style lang="scss">
   @import './our-services.scss';
 </style>

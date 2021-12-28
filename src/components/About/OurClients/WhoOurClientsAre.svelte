@@ -16,6 +16,6 @@
   </div>
 </section>
 
-<style type="text/scss">
+<style lang="scss">
   @import './who-our-clients-are.scss';
 </style>

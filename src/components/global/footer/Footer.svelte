@@ -20,6 +20,6 @@
   </div>
 </footer>
 
-<style type="text/scss">
+<style lang="scss">
   @import './footer.scss';
 </style>
