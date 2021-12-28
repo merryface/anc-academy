@@ -37,6 +37,6 @@
 
 <div class="FreeSeminars__triangleBottom" />
 
-<style type="text/scss">
+<style lang="scss">
   @import './free_seminars.scss';
 </style>

@@ -11,6 +11,6 @@
   </div>
 </section>
 
-<style type="text/scss">
+<style lang="scss">
   @import './seminars-hero.scss';
 </style>

@@ -17,6 +17,6 @@
   </div>
 </section>
 
-<style type="text/scss">
+<style lang="scss">
   @import './learning_from_pilots.scss';
 </style>

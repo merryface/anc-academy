@@ -27,6 +27,6 @@
   </div>  
 </section>
 
-<style type="text/scss">
+<style lang="scss">
   @import "./hero_home.scss";
 </style>

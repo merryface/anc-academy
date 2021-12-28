@@ -49,6 +49,6 @@
   </div>
 </header>
 
-<style type="text/scss">
+<style lang="scss">
   @import "./header-mobile.scss";
 </style>

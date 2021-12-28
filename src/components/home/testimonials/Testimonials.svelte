@@ -54,6 +54,6 @@
   </div>
 </section>
 
-<style type="text/scss">
+<style lang="scss">
   @import './testimonials.scss';
 </style>
