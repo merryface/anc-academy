@@ -1,0 +1,21 @@
+@import "../../../utils/utils.scss";
+
+.PricingHero {
+  background-color: $primary-colour;
+  color: $white; 
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    border-left: 2px $white solid;
+  }
+}
