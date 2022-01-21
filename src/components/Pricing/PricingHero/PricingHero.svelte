@@ -1,5 +1,5 @@
 <script>
-import { content } from "../../Seminars/SeminarsHero/SeminarsHero";
+import { content } from "./PricingHero";
 
 </script>
 
