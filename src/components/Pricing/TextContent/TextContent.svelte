@@ -15,7 +15,7 @@
     </div>
     <div class="TextContent__lesson">
       <p class="TextContent__text">{content.lesson.text}</p>
-      <a href="{content.lesson.url}" class="TextContent__lessonButton">{content.lesson.url}</a>
+      <Link to="{content.lesson.url}" class="TextContent__lessonButton">{content.lesson.label}</Link>
     </div>
   </div>
 </section>
