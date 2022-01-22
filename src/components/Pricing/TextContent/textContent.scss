@@ -1,0 +1,86 @@
+@import "../../../utils/utils.scss";
+
+.TextContent {
+  &__container {
+    @include container;
+    margin-top: -3rem;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+
+    @include above($tablet) {
+      text-align: center;
+    }
+  }
+
+  &__nextSeminar, &__lesson {
+    @include above($tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 80rem;
+      margin: auto;
+    }
+  }
+}
+
+:global(.TextContent__seminarButton) {
+  color: $black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid $black;
+  width: 16rem;
+  font-size: 1.4rem;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  
+  .icon {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  @include above($tablet) {
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
+  
+  &:hover {
+    color: $white;
+    background: $black;
+  }
+}
+
+:global(.TextContent__lessonButton) {
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  text-decoration: none;
+  border: 1px solid $black;
+  background: $primary-colour;
+
+  @include above($phone) {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  @include above($tablet) {
+    max-width: 25rem;
+    margin: 4rem auto;
+  }
+}
