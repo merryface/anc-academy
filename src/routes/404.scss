@@ -1,0 +1,56 @@
+@import "../utils/utils.scss";
+
+.FourOhFour {
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  &__description {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+
+    @include above($phone) {
+      align-items: flex-start;
+    }
+  }
+
+  :global(.FourOhFour__link) {
+    text-decoration: none;
+    color: $white;
+    background: $primary-colour;;
+    padding: 0.4rem 0.4rem;
+    border: 1px solid $black;
+    width: 15rem;
+    text-align: center;
+
+    &:hover {
+      background: $secondary-colour;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 5 vh;
+  }
+}
