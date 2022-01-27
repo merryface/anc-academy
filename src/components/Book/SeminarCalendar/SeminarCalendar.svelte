@@ -13,5 +13,5 @@
 </section>
 
 <style lang="scss">
-  @import "./SeminarCalendar.scss";
+  @import "./seminarCalendar.scss";
 </style>
