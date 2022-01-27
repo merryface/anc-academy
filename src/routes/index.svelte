@@ -5,6 +5,7 @@
   import NotFound from './404.svelte';
   import Seminars from '../components/Seminars/Seminars.svelte';
   import Pricing from '../components/Pricing/Pricing.svelte';
+import Book from '../components/Book/Book.svelte';
   export let url = '';
 </script>
 
@@ -13,5 +14,6 @@
   <Route path="about" component={About} />
   <Route path="pricing" component={Pricing} />
   <Route path="seminars" component={Seminars} />
+  <Route path="book" component={Book} />
   <Route component={NotFound} />
 </Router>
