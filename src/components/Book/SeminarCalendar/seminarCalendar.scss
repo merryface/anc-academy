@@ -1,0 +1,38 @@
+@import '../../../utils/utils.scss';
+
+.SeminarCalendar {
+  &__container {
+    @include container;
+  }
+
+  &__text {
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__textBody {
+    font-size: 1.4rem;
+    line-height: 1.5;
+
+    @include above($phone) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__calendar {
+    width: 100%;
+    min-height: 40rem;
+
+    @include above($phone) {
+      min-height: 60rem;
+    }
+
+    @include above($tablet) {
+      min-height: 70rem;
+    }
+  }
+}
