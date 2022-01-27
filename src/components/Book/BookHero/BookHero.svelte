@@ -4,9 +4,13 @@
 
 <section class="BookingHero">
   <div class="BookingHero__container">
-    <p class="AboutHero__text">
+    <h1 class="BookingHero__text">
       {content.title}
-    </p>
+    </h1>
   </div>
   <img src={content.image.url} alt={content.image} class="BookingHero__image">
 </section>
+
+<style lang="scss">
+  @import "./bookHero";
+</style>

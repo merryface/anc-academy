@@ -1,0 +1,47 @@
+@import '../../../utils/utils.scss';
+
+.BookingHero {
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+
+  @include above($tablet) {
+    height: 60vh;
+  }
+
+  &__container {
+    @include container;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    box-sizing: border-box;
+
+    @include above($phone) {
+      padding-left: 0;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    color: $white;
+    font-size: 5rem;
+
+    @include above($phone) {
+      font-size: 6rem;
+    }
+
+    @include above($tablet) {
+      font-size: 7rem;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
