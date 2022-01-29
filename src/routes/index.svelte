@@ -8,6 +8,7 @@
   import Book from '../components/Book/Book.svelte';
   import EmailSent from '../components/Book/ContactForm/EmailSent.svelte';
   import Terms from '../components/Terms/Terms.svelte';
+  import JoinUs from '../components/JoinUs/JoinUs.svelte';
   export let url = '';
 </script>
 
@@ -20,5 +21,7 @@
 
   <Route path="emailSent" component={EmailSent} />
   <Route path="terms-and-conditions" component={Terms} />
+  <Route path="join-us" component={JoinUs} />
+
   <Route component={NotFound} />
 </Router>
