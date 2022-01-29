@@ -7,6 +7,7 @@
   import Pricing from '../components/Pricing/Pricing.svelte';
   import Book from '../components/Book/Book.svelte';
   import EmailSent from '../components/Book/ContactForm/EmailSent.svelte';
+  import Terms from '../components/Terms/Terms.svelte';
   export let url = '';
 </script>
 
@@ -18,5 +19,6 @@
   <Route path="book" component={Book} />
 
   <Route path="emailSent" component={EmailSent} />
+  <Route path="terms-and-conditions" component={Terms} />
   <Route component={NotFound} />
 </Router>
