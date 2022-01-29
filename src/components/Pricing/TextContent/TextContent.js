@@ -6,7 +6,7 @@ export const content = {
   },
   lesson: {
     text: "If you’re looking for groundschool tuition in order to prepare for a theory exam or skill test/checkride, you can ensure to book exlusively with our certified flight instructors.",
-    url: "bookings",
+    url: "book",
     label: "Book a Lesson",
   }
 }
