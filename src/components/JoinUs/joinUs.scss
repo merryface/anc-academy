@@ -1,0 +1,44 @@
+@import "../../utils/utils";
+
+.JoinUs {
+  min-height: calc(100vh - 16.5rem);
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    font-size: 3rem;
+    color: $primary-colour;
+    margin-bottom: 3rem;
+  }
+
+  &__header {
+    font-size: 2rem;
+    color: $primary-colour;
+    margin-bottom: 1rem;
+  }
+
+  &__requirements {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+  }
+
+  &__intro, &__outro, &__contact, &__list {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  &__listItem {
+    margin-bottom: 0.8rem;
+
+    &:before {
+      content: '\2708';
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      color: $primary-colour;
+    }
+  }
+}

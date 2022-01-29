@@ -5,6 +5,7 @@
 <section class="JoinUs">
 <div class="JoinUs__container">
   <h1 class="JoinUs__title">{content.title}</h1>
+  <p class="JoinUs__intro">{content.intro}</p>
 
   <div class="JoinUs__requirements">
     {#each content.requirements as requirement}
@@ -17,10 +18,10 @@
         </ul>
       </div>
     {/each}
-
-    <p class="JoinUs__outro">{content.nonPilots}</p>
-    <p class="JoinUs__contact">{content.contactUs}</p>
   </div>
+
+  <p class="JoinUs__outro">{content.nonPilots}</p>
+  <p class="JoinUs__contact">{content.contactUs}</p>
 </div>
 </section>
 
