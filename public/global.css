@@ -66,7 +66,7 @@ table {
 	border-spacing: 0;
 }
 
-p, a, ul, ol, li, form, label, span, div, section {
+p, a, ul, ol, li, form, label, span, div, section, textarea, input, button {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
