@@ -4,6 +4,7 @@
 
   onMount(async () => {
     document.getElementById('sendTo').setAttribute("action", `https://formsubmit.co/${content.emailString}`);
+    console.log(content.responseMessage);
   });
 </script>
 
@@ -25,10 +26,10 @@
       <button class="ContactForm__submit" type="submit">Submit</button>
 
       <!-- hidden -->
-      <input type="hidden" name="_next" value={content.root + "/seminars"}>
+      <input type="hidden" name="_next" value={content.root + content.redirect}>
       <input type="text" name="_honey" style="display:none">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="your custom message">
+      <input type="hidden" name="_autoresponse" value={content.responseMessage}>
   </form>
   </div>
 </section>
