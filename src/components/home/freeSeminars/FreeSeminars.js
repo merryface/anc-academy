@@ -11,7 +11,7 @@ export const content = {
     summary: "A.N.C Academy runs regular online seminars so that newcomers can experience what participating in sessions with us is like. Sign up below if you are interested in joining one of these sessions.",
     link: {
       linkLabel: "Find the Next Seminar",
-      url: "seminars"
+      url: "book"
     }
   }
 
