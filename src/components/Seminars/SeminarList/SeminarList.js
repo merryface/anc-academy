@@ -22,5 +22,5 @@ export const content = {
     },
   ],
   linkLabel: "Find the next seminar",
-  linkUrl: "/",
+  linkUrl: "book",
 }
