@@ -4,7 +4,7 @@ export const content = {
   teamMembers: [
     {
       image: {
-        url: "./assets/da62Hangar.jpg",
+        url: "./assets/ourTeamImages/teamMember-tarik.jpg",
         alt: "Merryface",
       },
       name: "Tarik (Merryface)",
@@ -12,7 +12,7 @@ export const content = {
     },
     {
       image: {
-        url: "./assets/da62Hangar.jpg",
+        url: "./assets/ourTeamImages/teamMember-kushal.jpg",
         alt: "Kainine",
       },
       name: "Kushal (Kainine)",
@@ -20,7 +20,7 @@ export const content = {
     },
     {
       image: {
-        url: "./assets/da62Hangar.jpg",
+        url: "./assets/ourTeamImages/teamMember-andrew.jpg",
         alt: "Puffmac",
       },
       name: "Andrew (Puffmac)",
