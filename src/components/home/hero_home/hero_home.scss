@@ -9,17 +9,45 @@
 
   &__video {
     width: 100%;
+    overflow: hidden;
+  }
 
+  &__mobileHeroContainer {
+    position: relative;
+    height: 70vh;
+
+    @include above($phone) {
+      display: none;
+    }
+  }
+
+  &__mobileHeroImage {
+    width: 102%;
+    margin-left: -1%;
+    margin-top: -5px;
+    height: 102%;
+    object-fit: cover;
+    filter: blur(0.5rem);
+    background: $black;
+  }
+
+  &__logo {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 70%;
   }
   
   &__videoContent {
-    height: 70vh;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+    display: none;
 
-    @include above($tablet) {
+    @include above($phone) {
+      display: block;
       height: calc(100vh - #{$header-height} - #{$cta-container-height});
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
     }
   }
 
@@ -67,7 +95,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 18rem;
+    width: 20rem;
     font-size: 1.4rem;
     text-transform: uppercase;
     box-sizing: border-box;
@@ -83,6 +111,7 @@
 
   &__icon {
     height: 1.6rem;
+    width: 1.6rem;
     color: $white;
   }
 }

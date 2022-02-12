@@ -1,4 +1,6 @@
 export const videoUrl = "./assets/homeHeroVideo.mp4";
+export const mobileHeroUrl = "./assets/mobileHero.jpg"
+export const logo = "./assets/logo_white.png"
 
 export const ctaItems = [
   {
