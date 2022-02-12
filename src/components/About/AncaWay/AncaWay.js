@@ -3,7 +3,7 @@ export const content = {
   titleTwo: "The ANCA Way of training",
   mainText: "Our unique service in the enthusiast flight simulator space uses a modern approach and tools to instructing the modern flight simulator pilot. Thanks to our wealth of experience both in the real and virtual cockpit, we can provide training that emulates real world flight training, as well as create a bespoke experience to deliver the training that you want and need.",
   colouredText: "Specialised real-world oriented training philosophy",
-  blackText: "We use official training guidelines as well as a modern teaching approach to provide our clients with the best training and expereince possible.",
+  blackText: "We use official training guidelines as well as a modern teaching approach to provide our clients with the best training and experience possible.",
   image: {
     url: "../assets/da62CockpitBanner.jpg",
     alt: "Da62 cockpit",
