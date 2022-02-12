@@ -24,7 +24,7 @@
 
 <header class="HeaderMobile">
   <div class="HeaderMobile__container">
-    <img class="HeaderMobile__logo" {src} alt="white ANC logo">
+    <a href="/"><img class="HeaderMobile__logo" {src} alt="white ANC logo"></a>
     <div class="HeaderMobile__burgerMenu {menuOpen}" on:click={toggleMenu}>
       <div class="HeaderMobile__burgerLine line1"></div>
       <div class="HeaderMobile__burgerLine line2"></div>
