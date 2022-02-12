@@ -10,6 +10,7 @@ export const content = {
     \n
     An instructor will get back to you as quickly as possible.
     \n
+    \n
     The ANC Academy Team
   `,
 }

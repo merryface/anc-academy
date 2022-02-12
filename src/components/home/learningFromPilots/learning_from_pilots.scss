@@ -72,11 +72,16 @@
   }
 
   &__textContent {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.8rem;
 
     @include above($phone) {
       line-height: 2.1rem;
+    }
+
+    @include above($tablet) {
+      line-height: 2.5rem;
+      font-size: 1.6rem;
     }
   }
 }
