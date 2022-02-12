@@ -95,7 +95,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 18rem;
+    width: 20rem;
     font-size: 1.4rem;
     text-transform: uppercase;
     box-sizing: border-box;
@@ -111,6 +111,7 @@
 
   &__icon {
     height: 1.6rem;
+    width: 1.6rem;
     color: $white;
   }
 }
