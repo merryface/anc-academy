@@ -1,11 +1,16 @@
 <script>
   import IoIosAirplane from 'svelte-icons/io/IoIosAirplane.svelte'
   import { Link } from 'svelte-routing';
-  import { videoUrl, ctaItems } from './Hero_home';
+  import { videoUrl, ctaItems, mobileHeroUrl, logo } from './Hero_home';
 </script>
 
 <section class="HeroHome">
   <div class="HeroHome__video">
+    <div class="HeroHome__mobileHeroContainer">
+      <img src={mobileHeroUrl} alt="Da42 on the runway at susnet" class="HeroHome__mobileHeroImage">
+      <img src={logo} alt="ANC Academy Logo" class="HeroHome__logo">
+    </div>
+
     <video class="HeroHome__videoContent" autoplay muted loop>
       <source src={videoUrl} type="video/mp4">
     </video>
