@@ -13,15 +13,15 @@ export const content = {
       },
       {
         label: "10h with FI bundle",
-        price: 200,
+        price: 190,
       },
       {
         label: "10h with PI bundle",
-        price: 110,
+        price: 140,
       },
       {
         label: "Private Pilot Course (45h)",
-        price: 800,
+        price: 820,
       },
       {
         label: "Instrument Pilot Course (40h)",
