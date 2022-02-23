@@ -4,7 +4,12 @@ export let content;
 </script>
 
 <Link class="PricingPageLink" to={content.url}>
-  <img src={content.image.url} alt={content.image.alt} class="PricingPageLink__image">
+  <div class="PricingPageLink__container" style="background-image: url({content.imageUrl});">
+    <div class="PricingPageLink__text">
+      <h2 class="PricingPageLink__label">{content.label}</h2>
+      <p class="PricingPageLink__sublabel">{content.label}</p>
+    </div>
+  </div>
 </Link>
 
 <style lang="scss">
