@@ -4,6 +4,14 @@
   &__container {
     @include container;
     margin-top: -3rem;
+
+    @include above($phone) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 3rem;
+      padding-top: 1rem;
+    }
   }
 
   &__text {
@@ -16,12 +24,11 @@
   }
 
   &__nextSeminar, &__lesson {
-    @include above($tablet) {
+    @include above($phone) {
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 80rem;
-      margin: auto;
+      max-width: 30rem;
     }
   }
 }
@@ -75,12 +82,18 @@
   background: $primary-colour;
 
   @include above($phone) {
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-bottom: 4rem;
   }
 
   @include above($tablet) {
     max-width: 25rem;
-    margin: 4rem auto;
+  }
+
+  &:hover {
+    color: $primary-colour;
+    text-decoration: none;
+    border: 1px solid $primary-colour;
+    background: $white;
   }
 }
