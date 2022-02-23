@@ -7,7 +7,7 @@ export let content;
   <div class="PricingPageLink__container" style="background-image: url({content.imageUrl});">
     <div class="PricingPageLink__text">
       <h2 class="PricingPageLink__label">{content.label}</h2>
-      <p class="PricingPageLink__sublabel">{content.label}</p>
+      <p class="PricingPageLink__sublabel">{content.sublabel}</p>
     </div>
   </div>
 </Link>

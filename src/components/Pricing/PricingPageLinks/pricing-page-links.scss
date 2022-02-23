@@ -1,0 +1,16 @@
+@import "../../../utils/utils.scss";
+
+.PricingPageLinks {
+  &__container {
+    @include container;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+  }
+}
