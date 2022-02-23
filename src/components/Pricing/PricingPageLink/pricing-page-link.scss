@@ -2,10 +2,11 @@
 
 .PricingPageLink {
   &__container {
-    @include container;
     position: relative;
-    height: 30rem;
+    height: 24rem;
+    width: 30rem;
     padding: 0;
+    margin: 0;
     background-image: url("./assets/bookNowHero.jpg");
     background-size: cover;
 
