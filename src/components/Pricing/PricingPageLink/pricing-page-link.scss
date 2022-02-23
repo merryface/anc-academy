@@ -38,6 +38,7 @@
 
       .PricingPageLink__sublabel {
         opacity: 1;
+        max-height: auto;
       }
     }
   }
@@ -46,11 +47,11 @@
   &__text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 6rem);
+    transform: translate(-50%, 4rem);
     bottom: 20%;
     color: $white;
     text-align: center;
@@ -64,6 +65,7 @@
     padding-bottom: 0.5rem;
     border-bottom: 0px solid rgba(255, 255, 255, 0);
     width: fit-content;
+    max-width: 85%;
     transition: border-bottom ease-in-out 0.3s, color ease-in-out 0.3s;
   }
 
@@ -72,7 +74,8 @@
     padding-top: 0.5rem;
     width: fit-content;
     opacity: 0;
-    transition: opacity ease-in-out 0.3s;
+    transition: opacity ease-in-out 0.3s, max-height ease-in-out 0.3s;
+    max-height: 0;
   }
 }
 

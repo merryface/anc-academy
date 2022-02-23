@@ -5,8 +5,16 @@
   import TextContent from "./TextContent/TextContent.svelte";
 </script>
 
-<PricingHero />
-<Summary />
-<PricingPageLinks />
-<TextContent />
+<div class="pricingBody">
+  <PricingHero />
+  <Summary />
+  <PricingPageLinks />
+  <TextContent />
+</div>
+
+<style>
+.pricingBody {
+  min-height: calc(100vh - 16.8rem);
+}
+</style>
 

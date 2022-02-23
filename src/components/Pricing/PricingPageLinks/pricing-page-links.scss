@@ -12,5 +12,11 @@
     align-items: center;
     width: 100%;
     gap: 3rem;
+
+    @include above($phone) {
+      flex-direction: row;
+      gap: 4rem;
+      
+    }
   }
 }
