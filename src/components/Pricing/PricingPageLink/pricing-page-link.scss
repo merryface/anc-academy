@@ -22,8 +22,22 @@
       transition: opacity ease-in-out 0.3s;
     }
 
-    &:hover::after {
-      opacity: 0.4;
+    &:hover{
+      &:after {
+        opacity: 0.4;
+      }
+
+      .PricingPageLink__text {
+        transform: translate(-50%, 0);
+      }
+
+      .PricingPageLink__label {
+        border-bottom: 3px solid rgba(255, 255, 255, 1);
+      }
+
+      .PricingPageLink__sublabel {
+        opacity: 1;
+      }
     }
   }
 
@@ -35,25 +49,29 @@
     align-items: center;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 6rem);
     bottom: 20%;
     color: $white;
     text-align: center;
     width: 100%;
     z-index: 2;
+    transition: transform ease-in-out 0.3s;
   }
 
   &__label {
     font-size: 2.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid $white;
+    border-bottom: 0px solid rgba(255, 255, 255, 0);
     width: fit-content;
+    transition: border-bottom ease-in-out 0.3s, color ease-in-out 0.3s;
   }
 
   &__sublabel {
     font-size: 1.8rem;
     padding-top: 0.5rem;
     width: fit-content;
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
   }
 }
 
