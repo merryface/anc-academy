@@ -3,6 +3,7 @@
 .PricingSummary {
   &__container {
     @include container;
+    padding-bottom: 0 !important;
   }
 
   &__text {
