@@ -9,6 +9,10 @@
     min-height: 36rem;
   }
 
+  @include above($phone) {
+    min-height: 60vh;
+  }
+
   &__container {
     @include container;
     position: relative;
@@ -26,7 +30,13 @@
     margin-bottom: 1.5rem;
 
     @include above($phone) {
+      margin-top: 3rem;
       margin-bottom: 3rem;
+    }
+
+    @include above($tablet) {
+      font-size: 4rem;
+      margin-top: 5rem;
     }
   }
 
@@ -56,6 +66,11 @@
       top: 3rem;
       right: 1.5rem;
     }
+
+    @include above($tablet) {
+      top: 5.5rem;
+      height: 57vh;
+    }
   }
 }
 
@@ -79,5 +94,11 @@
 
   @include above($phone) {
     display: block;
+    padding: 1.5rem 1.5rem;
+  }
+
+  @include above($tablet) {
+    font-size: 2rem;
+    max-width: 95%;
   }
 }
