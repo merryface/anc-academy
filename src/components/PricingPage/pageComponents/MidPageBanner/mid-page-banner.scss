@@ -5,11 +5,17 @@
     width: 100vw;
     height: 7rem;
     object-fit: cover;
+
+    @include above($phone) {
+      height: 9rem;
+    }
   }
 
   &__container {
-    @include container;
+    @include hContainer;
     padding-top: 2rem;
+    padding-bottom: 4rem;
+
   }
 
   &__text {
