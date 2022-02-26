@@ -9,7 +9,7 @@
     min-height: 36rem;
   }
 
-  @include above($phone) {
+  @include above($tablet) {
     min-height: 60vh;
   }
 
