@@ -1,5 +1,5 @@
 <script>
-  import { content } from './Rates.js';
+  export let content;
 </script>
 
 <section class="Rates">

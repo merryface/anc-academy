@@ -1,5 +1,5 @@
-export const content = {
-  summary: "Our rates are based on the experience and qualifications of our instructors. We always recommend speaking to us before buying a full syllabus.",
+export const simulatorRates = {
+  summary: "ANC provides high quality instructors to give you the most authentic flight training experience, without you ever needing to leave your home. Our prices are reasonable and affordable, and we always focus on delivering the training you paid for.",
   table: {
     title: "Rates",
     rates: [
@@ -18,18 +18,6 @@ export const content = {
       {
         label: "10h with PI bundle",
         price: 140,
-      },
-      {
-        label: "Private Pilot Course (45h)",
-        price: 820,
-      },
-      {
-        label: "Instrument Pilot Course (40h)",
-        price: 750,
-      },
-      {
-        label: "A320 Type Rating Course (40h)",
-        price: 750,
       },
       {
         label: "Hourly per person for group lessons (minimum 3 people per group)",
