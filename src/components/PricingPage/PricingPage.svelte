@@ -1,6 +1,7 @@
 <script>
-import PricingPageHero from "./pageComponents/PricingPageHero/PricingPageHero.svelte";
-
+  import PricingPageHero from "./pageComponents/PricingPageHero/PricingPageHero.svelte";
+  import Rates from "./pageComponents/Rates/Rates.svelte";
+  import { simulatorRates } from './pageComponents/Rates/simulatorRates';
 </script>
 
 <PricingPageHero content= {{
@@ -10,3 +11,5 @@ import PricingPageHero from "./pageComponents/PricingPageHero/PricingPageHero.sv
   imageAlt: "Image Alt",
   linkLabel: "Book Now"
 }} />
+
+<Rates content={simulatorRates} />
