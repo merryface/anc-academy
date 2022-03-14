@@ -18,6 +18,7 @@
 
   &__text {
     font-size: 2rem;
+    min-width: 80%;
   }
 
   &__button {
@@ -26,9 +27,14 @@
 
   &__items {
     @include hContainer;
+    height: unset;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    max-height: 0;
+    overflow:hidden;
+    transition: max-height 0.3s ease-in-out;
+    height: 100%;
   }
 
   &__item {
@@ -36,16 +42,30 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 70%;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
 
   &__itemName {
     font-size: 1.6rem;
+    min-width: 50%;
   }
 
   &__download {
     height: 2rem;
+  }
+
+  .expanded {
+    max-height: none;
+  }
+
+  .opened {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .closed {
+    transition: transform 0.3s ease-in-out;
   }
 }
