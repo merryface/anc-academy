@@ -1,0 +1,25 @@
+@import '../../../../utils/utils.scss';
+
+.Accordion {
+  &__headerContainer {
+    @include hContainer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  &__header {
+    color: $white;
+    width: 100%;
+    background-color: $primary-colour;
+  }
+
+  &__text {
+    font-size: 2rem;
+  }
+
+  &__button {
+    height: 3rem;
+  }
+}
