@@ -9,7 +9,7 @@
     <div class="Accordion__header">
       <div class="Accordion__headerContainer">
         <h3 class="Accordion__text">{content.header}</h3>
-        <div class="Accordion__button"><FaAngleDown/></div>
+        <div class="Accordion__button icon"><FaAngleDown/></div>
       </div>
     </div>
 
@@ -17,7 +17,7 @@
       {#each content.items as {label, fileUrl}}
       <div class="Accordion__item">
         <p class="Accordion__itemName">{label}</p>
-        <a href={fileUrl} class="Accordion__download"><FaFilePdf /></a>
+        <a href={fileUrl} class="Accordion__download icon"><FaFilePdf /></a>
       </div>
       {/each}
     </div>
