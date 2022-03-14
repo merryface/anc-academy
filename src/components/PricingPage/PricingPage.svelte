@@ -3,6 +3,7 @@
   import Rates from "./pageComponents/Rates/Rates.svelte";
   import MidPageBanner from "./pageComponents/MidPageBanner/MidPageBanner.svelte";  
   import { simulatorRates } from './pageComponents/Rates/simulatorRates';
+  import Accordion from "./pageComponents/Accordion/Accordion.svelte";
 </script>
 
 <PricingPageHero content= {{
@@ -13,9 +14,18 @@
   linkLabel: "Book Now"
 }} />
 
-<Rates content={simulatorRates} />
-<MidPageBanner content={{
+<Rates content ={simulatorRates} />
+
+<MidPageBanner content = {{
   imageUrl: './assets/da62CockpitBanner.jpg',
   imageAlt: "Da62 Cockpit",
   text: `We also provide <span class="MidPageBanner__blueText">full courses</span>, not just one off experiences`
+}} />
+
+<Accordion content = {{
+  header: "Simulator Private Pilot Training",
+  items: [{
+    label: "PPL Phase 1",
+    fileUrl: "/",
+  }]
 }} />
