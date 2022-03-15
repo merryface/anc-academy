@@ -24,7 +24,7 @@
       {#each content.items as {label, fileUrl}}
         <li class="Accordion__item" transition:slide={{ duration: 300 }}>
           <p class="Accordion__itemName">{label}</p>
-          <a href={fileUrl} class="Accordion__download icon"><FaFilePdf /></a>
+          <a href={fileUrl} class="Accordion__download icon" download><FaFilePdf /></a>
         </li>
         {/each}
       {/if}
