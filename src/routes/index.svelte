@@ -17,14 +17,14 @@
 
 <Router {url}>
   <Route path="/"><Home/></Route>
-  <Route path="about" ><About /></Route>
-  <Route path="seminars" component={Seminars} />
-  <Route path="book" component={Book} />
+  <Route path="about"><About /></Route>
+  <Route path="seminars"><Seminars /></Route>
+  <Route path="book"><Book /></Route>
   
-  <Route path="pricing" component={Pricing} />
+  <Route path="pricing"><Pricing /></Route>
   <Route path="pricing-simulator"><SimulatorPricingPage /></Route>
 
-  <Route path="emailSent" component={EmailSent} />
+  <Route path="emailSent"><EmailSent /></Route>
   <Route path="terms-and-conditions"><Terms /></Route>
   <Route path="join-us"><JoinUs /></Route>
 
