@@ -51,6 +51,31 @@
         fileUrl: "/",
       },
     ]
+    },
+    {
+      header: "Simulator Private Pilot Training",
+      items: [
+        {
+        label: "PPL Phase 1",
+        fileUrl: "/",
+      },
+      {
+        label: "PPL Phase 2",
+        fileUrl: "/",
+      },
+      {
+        label: "PPL Phase 3",
+        fileUrl: "/",
+      },
+      {
+        label: "PPL Phase 4",
+        fileUrl: "/",
+      },
+      {
+        label: "Full PPL Course",
+        fileUrl: "/",
+      },
+    ]
     }
   ]}
 />

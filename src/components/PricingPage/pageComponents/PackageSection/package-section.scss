@@ -1,0 +1,10 @@
+@import '../../../../utils/utils.scss';
+
+.PackageSection {
+  &__text {
+    @include container;
+    padding-top: 0;
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+}
