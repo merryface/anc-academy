@@ -27,14 +27,11 @@
 
   &__items {
     @include hContainer;
-    height: unset;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    max-height: 0;
     overflow:hidden;
     transition: max-height 0.3s ease-in-out;
-    height: 100%;
   }
 
   &__item {
@@ -57,7 +54,7 @@
   }
 
   .expanded {
-    max-height: none;
+    transition: max-height 0.3s ease-in-out;
   }
 
   .opened {
