@@ -1,12 +1,24 @@
 @import '../../../../utils/utils.scss';
 
 .Accordion {
+  @include above($tablet) {
+    @include container;
+  }
+
   &__headerContainer {
-    @include hContainer;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @include below($desktop) {
+      @include hContainer;
+    }
+
+    @include above($tablet) {
+      padding: 0.5rem 1rem;
+      // width: 60vw;
+    }
   }
   
   &__header {
@@ -42,6 +54,7 @@
     width: 70%;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    max-width: 40rem;
   }
 
   &__itemName {
@@ -51,6 +64,12 @@
 
   &__download {
     height: 2rem;
+  }
+
+  .icon {
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .expanded {

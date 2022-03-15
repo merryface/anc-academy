@@ -53,8 +53,8 @@
 // ====================
 // BELOW: Sets media query below specified width
 // ====================
-@mixin above($width) {
-  @media screen and (min-width: #{$width}) {
+@mixin below($width) {
+  @media screen and (max-width: #{$width}) {
     @content;
   }
 }
