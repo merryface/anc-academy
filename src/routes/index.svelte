@@ -1,8 +1,14 @@
 <script>
+  // === Import routing ===
   import { Router, Route } from 'svelte-routing';
+
+  // === Pricing Data ===
   import { simulatorPage } from "../components/PricingPage/pricingPagesData/simulatorPage"
   import { simulatorRates } from '../components/PricingPage/pricingPagesData/pricingData/simulatorRates';
+  import { groundschoolRates } from '../components/PricingPage/pricingPagesData/pricingData/groundschoolRates';
 
+
+  // === Import Page components ===
   import Home from "../components/home/Home.svelte";
   import About from '../components/About/About.svelte';
   import NotFound from './404.svelte';
@@ -26,6 +32,7 @@
   
   <Route path="pricing"><Pricing /></Route>
   <Route path="pricing-simulator"><PricingPage content={simulatorPage} pricingInfo={simulatorRates} /></Route>
+  <Route path="pricing-groundschool"><PricingPage content={simulatorPage} pricingInfo={groundschoolRates} /></Route>
 
   <Route path="emailSent"><EmailSent /></Route>
   <Route path="terms-and-conditions"><Terms /></Route>
