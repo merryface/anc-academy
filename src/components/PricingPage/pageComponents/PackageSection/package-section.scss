@@ -1,6 +1,7 @@
 @import '../../../../utils/utils.scss';
 
 .PackageSection {
+  padding-bottom: 3rem;
   &__text {
     @include container;
     padding-top: 0;
