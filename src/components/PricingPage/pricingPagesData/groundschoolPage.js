@@ -2,17 +2,17 @@ export const groundschoolPage = {
   hero: {
     heading: "Online Ground School",
     subtitle: "Get remote groundschool training, including exam preparation when needed",
-    imageUrl: "./assets/bookNowHero.jpg",
-    imageAlt: "Groundschool Images",
+    imageUrl: "./assets/navigraphChartSample.jpg",
+    imageAlt: "IFR Navigation Chart",
     linkLabel: "Book Now"
   },
   midPageBanner: {
-    imageUrl: './assets/da62CockpitBanner.jpg',
-    imageAlt: "Da62 Cockpit",
+    imageUrl: './assets/studyMaterials.jpg',
+    imageAlt: "Study books and ipad",
     text: `We also provide <span class="MidPageBanner__blueText">full day courses</span>, not just one off experiences`
   },
   trainingPackages: {
-    summary: "If you are ready to commit to a full training course, you can select one of the packages below to fully immerse yourself in a full training course experience.",
+    summary: "If you are interested in trying one of our lessons or full day courses, you can explore them in more detail below.",
     packages: [
       {
         header: "Simulator Private Pilot Training",
