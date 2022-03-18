@@ -47,7 +47,31 @@ export const groundschoolPage = {
             fileUrl: "/",
           }
         ]
-      }
+      },
+      {
+        header: "Simulator Instrument Training",
+          items: [
+            {
+            label: "Instrument Phase 1",
+            fileUrl: "/",
+          },
+          {
+            label: "Instrument Phase 2",
+            fileUrl: "/",
+          },
+          {
+            label: "Instrument Phase 3",
+            fileUrl: "/",
+          },
+          {
+            label: "Instrument Phase 4",
+            fileUrl: "/",
+          },            {
+            label: "Full IFR Course",
+            fileUrl: "/",
+          }
+        ]
+      },
     ]
   }
 }

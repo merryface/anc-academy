@@ -47,7 +47,74 @@ export const simulatorPage = {
             fileUrl: "/",
           }
         ]
-      }
+      },
+      {
+        header: "Simulator Instrument Training",
+          items: [
+            {
+            label: "Instrument Phase 1",
+            fileUrl: "/",
+          },
+          {
+            label: "Instrument Phase 2",
+            fileUrl: "/",
+          },
+          {
+            label: "Instrument Phase 3",
+            fileUrl: "/",
+          },
+          {
+            label: "Instrument Phase 4",
+            fileUrl: "/",
+          },            
+          {
+            label: "Full IFR Course",
+            fileUrl: "/",
+          }
+        ]
+      },
+      {
+        header: "Simulator Commercial Training",
+          items: [
+            {
+            label: "Commercial Phase 1",
+            fileUrl: "/",
+          },
+          {
+            label: "Commercial Phase 2",
+            fileUrl: "/",
+          },
+          {
+            label: "Commercial Phase 3",
+            fileUrl: "/",
+          },
+          {
+            label: "Full Commercial Course",
+            fileUrl: "/",
+          }
+        ]
+      },
+      {
+        header: "Simulator A320 Training",
+          items: [
+            {
+            label: "320 Type Rating Phase 1",
+            fileUrl: "/",
+          },
+          {
+            label: "320 Type Rating Phase 2",
+            fileUrl: "/",
+          },
+          {
+            label: "320 Type Rating Phase 3",
+            fileUrl: "/",
+          },
+          {
+            label: "Full Type Rating",
+            fileUrl: "/",
+          }
+        ]
+      },
     ]
   }
 }
