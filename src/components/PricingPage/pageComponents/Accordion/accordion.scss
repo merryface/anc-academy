@@ -19,7 +19,6 @@
 
     @include above($tablet) {
       padding: 0.5rem 1rem;
-      // width: 60vw;
     }
   }
   
@@ -46,6 +45,7 @@
     justify-content: flex-start;
     overflow:hidden;
     transition: max-height 0.3s ease-in-out;
+    margin-bottom: 1rem;
   }
 
   &__item {
