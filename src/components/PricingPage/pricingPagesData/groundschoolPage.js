@@ -15,61 +15,81 @@ export const groundschoolPage = {
     summary: "If you are interested in trying one of our lessons or full day courses, you can explore them in more detail below.",
     packages: [
       {
-        header: "Simulator Private Pilot Training",
+        header: "PPL High Level Topic Reviews",
         items: [
           {
-          label: "PPL Phase 1",
+          label: "Intro To Principles of Flight",
           fileUrl: "/",
         },
         {
-          label: "PPL Phase 2",
+          label: "Intro to Meteorology",
           fileUrl: "/",
         },
         {
-          label: "PPL Phase 3",
+          label: "Intro to Air Law",
           fileUrl: "/",
         },
         {
-          label: "PPL Phase 4",
+          label: "Intro to Aircraft General Knowledge",
           fileUrl: "/",
         },
         {
-          label: "Full PPL Course",
+          label: "Intro to Human Factors",
+          fileUrl: "/",
+        },
+        {
+          label: "Intro to Flight Performance",
+          fileUrl: "/",
+        },
+        {
+          label: "Intro to Flight Planning",
+          fileUrl: "/",
+        },
+        {
+          label: "Intro to Communications",
           fileUrl: "/",
         },
       ]
       },
       {
-        header: "Simulator Multi-Engine Training",
+        header: "PPL Groundschool Lessons",
           items: [
             {
-            label: "Multi-Engine Course",
-            fileUrl: "/",
-          }
-        ]
-      },
-      {
-        header: "Simulator Instrument Training",
-          items: [
-            {
-            label: "Instrument Phase 1",
+            label: "Pressure Instruments",
             fileUrl: "/",
           },
           {
-            label: "Instrument Phase 2",
+            label: "Thunderstorms",
             fileUrl: "/",
           },
           {
-            label: "Instrument Phase 3",
+            label: "CX3E EFC Workshop",
             fileUrl: "/",
           },
           {
-            label: "Instrument Phase 4",
+            label: "Engine Carburettors",
             fileUrl: "/",
-          },            {
-            label: "Full IFR Course",
+          },
+          {
+            label: "Stall and Spin Theory",
             fileUrl: "/",
-          }
+          },
+          {
+            label: "Take-off Climb Perf",
+            fileUrl: "/",
+          },
+          {
+            label: "Flight Planning minina",
+            fileUrl: "/",
+          },
+          {
+            label: "Nav Flight Planning",
+            fileUrl: "/",
+          },
+          {
+            label: "Airport Markings",
+            fileUrl: "/",
+          },
         ]
       },
     ]
