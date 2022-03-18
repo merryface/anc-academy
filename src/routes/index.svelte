@@ -4,6 +4,7 @@
 
   // === Pricing Data ===
   import { simulatorPage } from "../components/PricingPage/pricingPagesData/simulatorPage"
+  import { groundschoolPage } from "../components/PricingPage/pricingPagesData/groundschoolPage"
   import { simulatorRates } from '../components/PricingPage/pricingPagesData/pricingData/simulatorRates';
   import { groundschoolRates } from '../components/PricingPage/pricingPagesData/pricingData/groundschoolRates';
 
@@ -32,7 +33,7 @@
   
   <Route path="pricing"><Pricing /></Route>
   <Route path="pricing-simulator"><PricingPage content={simulatorPage} pricingInfo={simulatorRates} /></Route>
-  <Route path="pricing-groundschool"><PricingPage content={simulatorPage} pricingInfo={groundschoolRates} /></Route>
+  <Route path="pricing-groundschool"><PricingPage content={groundschoolPage} pricingInfo={groundschoolRates} /></Route>
 
   <Route path="emailSent"><EmailSent /></Route>
   <Route path="terms-and-conditions"><Terms /></Route>
