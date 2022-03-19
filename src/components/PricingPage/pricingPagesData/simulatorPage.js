@@ -19,7 +19,7 @@ export const simulatorPage = {
         items: [
           {
           label: "PPL Phase 1",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/simulator/ppl/PPL Phase 1.pdf",
         },
         {
           label: "PPL Phase 2",
