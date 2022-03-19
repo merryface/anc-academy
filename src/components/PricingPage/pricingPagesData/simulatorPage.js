@@ -23,19 +23,19 @@ export const simulatorPage = {
         },
         {
           label: "PPL Phase 2",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/simulator/ppl/PPL Phase 2.pdf",
         },
         {
           label: "PPL Phase 3",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/simulator/ppl/PPL Phase 3.pdf",
         },
         {
           label: "PPL Phase 4",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/simulator/ppl/PPL Phase 4.pdf",
         },
         {
           label: "Full PPL Course",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/simulator/ppl/Full PPL Course.pdf",
         },
       ]
       },
