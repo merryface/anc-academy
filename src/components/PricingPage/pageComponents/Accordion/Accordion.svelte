@@ -25,7 +25,7 @@
         <li class="Accordion__item" transition:slide={{ duration: 300 }}>
           <p class="Accordion__itemName">{label}</p>
           {#if fileUrl != '/'}
-          <a href={fileUrl} class="Accordion__download icon" download><FaFilePdf /></a>
+          <a href={fileUrl} class="Accordion__download icon" target="_blank"><FaFilePdf /></a>
           {:else}
           <p class="Accordion__download-disabled">Coming Soon</p>
           {/if}

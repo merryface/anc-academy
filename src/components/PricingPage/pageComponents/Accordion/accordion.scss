@@ -68,7 +68,14 @@
   }
 
   &__download {
+    color: $primary-colour;
     height: 2rem;
+  }
+
+  &__download-disabled {
+    color: $secondary-text;
+    font-style: italic;
+    font-size: 1.4rem;
   }
 
   .icon {
