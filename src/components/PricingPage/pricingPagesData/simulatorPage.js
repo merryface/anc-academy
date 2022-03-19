@@ -48,7 +48,7 @@ export const simulatorPage = {
           items: [
             {
             label: "Multi-Engine Course",
-            fileUrl: "/",
+            fileUrl: "/assets/packages/simulator/multiengine/Multi Engine Course.pdf",
           }
         ]
       },
