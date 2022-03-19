@@ -37,6 +37,10 @@ export const simulatorPage = {
           label: "Full PPL Course",
           fileUrl: "/assets/packages/simulator/ppl/Full PPL Course.pdf",
         },
+        {
+          label: "Night Rating",
+          fileUrl: "/assets/packages/simulator/ppl/Night Rating.pdf",
+        },
       ]
       },
       {
