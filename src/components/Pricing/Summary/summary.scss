@@ -1,0 +1,21 @@
+@import "../../../utils/utils.scss";
+
+.PricingSummary {
+  &__container {
+    @include container;
+    padding-bottom: 0 !important;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    
+    @include above($phone) {
+      font-size: 1.6rem;
+    }
+
+    @include above($tablet) {
+      font-size: 1.8rem;
+    }
+  }
+}

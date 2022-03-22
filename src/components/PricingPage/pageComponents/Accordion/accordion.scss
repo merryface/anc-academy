@@ -1,0 +1,103 @@
+@import '../../../../utils/utils.scss';
+
+.Accordion {
+  @include above($tablet) {
+    @include container;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  &__headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @include below($desktop) {
+      @include hContainer;
+    }
+
+    @include above($tablet) {
+      padding: 0.5rem 1rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  &__header {
+    color: $white;
+    width: 100%;
+    background-color: $primary-colour;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 2rem;
+    min-width: 80%;
+  }
+
+  &__button {
+    height: 3rem;
+  }
+
+  &__items {
+    @include hContainer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow:hidden;
+    transition: max-height 0.3s ease-in-out;
+    margin-bottom: 1rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    @include above($tablet) {
+      max-width: 35rem;
+    }
+  }
+
+  &__itemName {
+    font-size: 1.6rem;
+    min-width: 50%;
+  }
+
+  &__download {
+    color: $primary-colour;
+    height: 2rem;
+  }
+
+  &__download-disabled {
+    color: $secondary-text;
+    font-style: italic;
+    font-size: 1.4rem;
+  }
+
+  .icon {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .expanded {
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .opened {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .closed {
+    transition: transform 0.3s ease-in-out;
+  }
+}

@@ -1,0 +1,104 @@
+@import '../../../../utils/utils.scss';
+
+.PricingPageHero {
+  background-color: $primary-colour;
+  color: $white;
+  margin-bottom: 4rem;
+
+  @include above($phone) {
+    min-height: 36rem;
+  }
+
+  @include above($tablet) {
+    min-height: 60vh;
+  }
+
+  &__container {
+    @include container;
+    position: relative;
+  }
+
+  &__text {
+    @include above($phone) {
+      width: 40%;
+    }
+  }
+
+  &__heading {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+
+    @include above($phone) {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    @include above($tablet) {
+      font-size: 4rem;
+      margin-top: 10rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    padding-left: 1rem;
+    border-left: 3px solid $white;
+    margin-bottom: 2rem;
+
+    @include above($phone) {
+      margin-bottom: 3rem;
+      font-size: 2rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: -7.2rem;
+    object-fit: cover;
+
+    @include above($phone) {
+      position: absolute;
+      width: 55%;
+      height: 36rem;
+      top: 3rem;
+      right: 1.5rem;
+    }
+
+    @include above($tablet) {
+      top: 5.5rem;
+      height: 57vh;
+    }
+  }
+}
+
+:global(.PricingPageHero__link) {
+  background-color: $white;
+  text-decoration: none;
+  color: $primary-colour;
+  border: 1px solid $primary-colour;
+  transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s, border ease-in-out 0.1s;
+  padding: 0.5rem 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  text-align: center;
+
+  &:hover {
+    background-color: $primary-colour;
+    color: $white;
+    border: 1px solid $white;
+  }
+
+  @include above($phone) {
+    display: block;
+    padding: 1.5rem 1.5rem;
+  }
+
+  @include above($tablet) {
+    font-size: 2rem;
+    max-width: 95%;
+  }
+}

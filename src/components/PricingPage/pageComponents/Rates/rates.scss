@@ -1,0 +1,51 @@
+@import "../../../../utils/utils.scss";
+
+.Rates {
+  &__container {
+    @include container;
+  }
+
+  &__summary {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  &__table {
+    background: $primary-colour;
+    color: $white;
+    width: 100%;
+  }
+
+  &__tableHeader {
+    font-size: 2rem;
+    height: 3rem;
+    border-bottom: 1px $white solid;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+  &__rate {
+    font-size: 1.6rem;
+  }
+
+  &__label {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    
+  }
+
+  &__price {
+    padding: 1rem;
+    border-left: 1px solid $white;
+    text-align: right;
+    vertical-align: middle;
+
+    @include above($tablet) {
+      text-align: center;
+    }
+  }
+}
