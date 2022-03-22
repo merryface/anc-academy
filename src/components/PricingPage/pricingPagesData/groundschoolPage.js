@@ -55,6 +55,10 @@ export const groundschoolPage = {
         header: "PPL Groundschool Lessons",
           items: [
             {
+              label: "Reading and Understanding the POH (Cessna 152)",
+              fileUrl: "/assets/packages/groundschool/lessons/Reading and Understanding the POH.pdf",
+            },
+            {
             label: "Pressure Instruments",
             fileUrl: "/",
           },
