@@ -23,7 +23,7 @@ export const groundschoolPage = {
         },
         {
           label: "Intro to Meteorology",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/groundschool/high-level/Intro to Met.pdf",
         },
         {
           label: "Intro to Air Law",
@@ -31,7 +31,7 @@ export const groundschoolPage = {
         },
         {
           label: "Intro to Aircraft General Knowledge",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/groundschool/high-level/Intro to AGK.pdf",
         },
         {
           label: "Intro to Human Factors",
