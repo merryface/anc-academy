@@ -20,6 +20,10 @@
     @include above($tablet) {
       padding: 0.5rem 1rem;
     }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
   
   &__header {

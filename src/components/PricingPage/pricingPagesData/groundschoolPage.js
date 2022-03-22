@@ -19,19 +19,19 @@ export const groundschoolPage = {
         items: [
           {
           label: "Intro To Principles of Flight",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/groundschool/high-level/Intro to PoF.pdf",
         },
         {
           label: "Intro to Meteorology",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/groundschool/high-level/Intro to Met.pdf",
         },
         {
           label: "Intro to Air Law",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/groundschool/high-level/Intro to Air Law.pdf",
         },
         {
           label: "Intro to Aircraft General Knowledge",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/groundschool/high-level/Intro to AGK.pdf",
         },
         {
           label: "Intro to Human Factors",
@@ -54,6 +54,10 @@ export const groundschoolPage = {
       {
         header: "PPL Groundschool Lessons",
           items: [
+            {
+              label: "Reading and Understanding the POH (Cessna 152)",
+              fileUrl: "/assets/packages/groundschool/lessons/Reading and Understanding the POH.pdf",
+            },
             {
             label: "Pressure Instruments",
             fileUrl: "/",

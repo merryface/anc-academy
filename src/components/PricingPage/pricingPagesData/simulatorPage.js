@@ -23,19 +23,23 @@ export const simulatorPage = {
         },
         {
           label: "PPL Phase 2",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/simulator/ppl/PPL Phase 2.pdf",
         },
         {
           label: "PPL Phase 3",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/simulator/ppl/PPL Phase 3.pdf",
         },
         {
           label: "PPL Phase 4",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/simulator/ppl/PPL Phase 4.pdf",
         },
         {
           label: "Full PPL Course",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/simulator/ppl/Full PPL Course.pdf",
+        },
+        {
+          label: "Night Rating",
+          fileUrl: "/assets/packages/simulator/ppl/Night Rating.pdf",
         },
       ]
       },
@@ -44,7 +48,7 @@ export const simulatorPage = {
           items: [
             {
             label: "Multi-Engine Course",
-            fileUrl: "/",
+            fileUrl: "/assets/packages/simulator/multiengine/Multi Engine Course.pdf",
           }
         ]
       },
