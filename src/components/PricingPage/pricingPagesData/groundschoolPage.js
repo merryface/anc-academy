@@ -19,7 +19,7 @@ export const groundschoolPage = {
         items: [
           {
           label: "Intro To Principles of Flight",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/groundschool/high-level/Intro to PoF.pdf",
         },
         {
           label: "Intro to Meteorology",
@@ -27,7 +27,7 @@ export const groundschoolPage = {
         },
         {
           label: "Intro to Air Law",
-          fileUrl: "/",
+          fileUrl: "/assets/packages/groundschool/high-level/Intro to Air Law.pdf",
         },
         {
           label: "Intro to Aircraft General Knowledge",
