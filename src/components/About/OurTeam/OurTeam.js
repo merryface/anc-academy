@@ -24,7 +24,7 @@ export const content = {
         alt: "Puffmac",
       },
       name: "Andrew (Puffmac)",
-      bio: "With a Private Pilot License and in the middle of his Commercial training, Andrew has years of experience teaching and coaching people in his current full-time position. Andrew has the ambition to apply his skills with his own students have he obtains his Flight Instructor Rating.",
+      bio: "With a Private Pilot License and in the middle of his Commercial training, Andrew has years of experience teaching and coaching people in his current full-time position. Andrew has the ambition to apply his skills with his own students once he obtains his Flight Instructor Rating.",
     },
   ]
 }
