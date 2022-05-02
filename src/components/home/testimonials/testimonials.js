@@ -17,6 +17,30 @@ export const testimonials = [
     name: "Mike",
     title: "Doctor and future pilot"
   },
+  {
+    id: 3,
+    text: "Excellent instructor and very knowledgeable about all things flying and simulator and streaming related!",
+    name: "Edward",
+    title: "Student pilot and Entrepreneur"
+  },
+  {
+    id: 4,
+    text: "Got my first instrument time in the aircraft today. \“Have you done this before?” He [the instructor] said…\"",
+    name: "Andrew",
+    title: "Commercial Student Pilot"
+  },
+  {
+    id: 5,
+    text: "Made sure I understand what the plane was doing. His knowledge of aviation as a commercial pilot elevated the session with expertise that allowed me to learn quickly and focus on the most important. Highly recommend.",
+    name: "Metzby",
+    title: "Senior Software Engineer"
+  },
+  {
+    id: 6,
+    text:"Fantastic guy! You wont find a better person than this. 11/10",
+    name: "mocynful",
+    title: "Aeronautical Engineering Student"
+  }
 ]
 
 export const content = {
