@@ -13,14 +13,14 @@
 <section class="FreeSeminars">
   <div class="FreeSeminars__container">
     <div class="FreeSeminars__text">
-      <h1 class="FreeSeminars__title">{content.title}</h1>
+      <h2 class="FreeSeminars__title">{content.title}</h2>
       <p class="FreeSeminars__summary">{content.summary}</p>
     </div>
 
     <div class="FreeSeminars__cards">
       {#each cards as {cardTitle, imageSrc, alt}}
       <div class="FreeSeminars__card">
-        <h2 class="FreeSeminars__cardTitle">{cardTitle}</h2>
+        <h3 class="FreeSeminars__cardTitle">{cardTitle}</h3>
         <div class="FreeSeminars__image">
           <img src="{setImage(imageSrc, innerWidth)}" {alt}>
         </div>
