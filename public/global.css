@@ -73,3 +73,7 @@ p, a, ul, ol, li, form, label, span, div, section, textarea, input, button {
 h1, h2, h3, h4 {
 	font-family: 'Fjalla One', sans-serif;
 }
+
+a {
+	font-size: 1.8rem;
+}
