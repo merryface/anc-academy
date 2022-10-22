@@ -9,22 +9,32 @@
   $: left = id => (testimonialShowIndex - id) * 100;
   $: atEnd = testimonialShowIndex === testimonials.length - 1;
   $: atStart = testimonialShowIndex === 0;
+  $: setHeight = index => {
+    let calculatedHeight = (testimonials[index].text.length * 10)/(document.body.offsetWidth) * 40 + 60
+    if (testimonials[index].text.length < 300) calculatedHeight = calculatedHeight < 250 ? 250 : calculatedHeight
+    if (testimonials[index].text.length >= 300) calculatedHeight = calculatedHeight < 300 ? 300 : calculatedHeight
+    return calculatedHeight;
+  } ;
 
+  function resizeTestimonial() {
+    setHeight(testimonialShowIndex)
+  }
 
-  let prevItem = () => {
+  const prevItem = () => {
     if(testimonialShowIndex > 0) testimonialShowIndex -= 1;
   }
   
-  let nextItem = () => {
+  const nextItem = () => {
     if(testimonialShowIndex < testimonials.length - 1) testimonialShowIndex += 1;
   }
 </script>
+<svelte:window on:resize={resizeTestimonial}/>
 
 <section class="Testimonials">
   <div class="Testimonials__container">
     <h2 class="Testimonials__title">{content.title}</h2>
 
-    <div class="Testimonials__carousel">
+    <div class="Testimonials__carousel" style="height: {setHeight(testimonialShowIndex)}px">
       {#each testimonials as {id, text, name, title}}
       <div class="Testimonials__carouselItem" style="left: {left(id)}vw" class:show={id === testimonialShowIndex}>
         <figure class="Testimonials__testimonial">
