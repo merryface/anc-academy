@@ -78,6 +78,10 @@ p,a, blockquote, figcaption, cite, span {
 	font-size: 1.8rem;
 }
 
+h1 {
+	font-size: 5rem;
+}
+
 h2 {
 	font-size: 4rem;
 }
