@@ -11,8 +11,8 @@
   $: atStart = testimonialShowIndex === 0;
   $: setHeight = index => {
     let calculatedHeight = (testimonials[index].text.length * 10)/(document.body.offsetWidth) * 40 + 60
-    if (testimonials[index].text.length < 300) calculatedHeight = calculatedHeight < 250 ? 250 : calculatedHeight
-    if (testimonials[index].text.length >= 300) calculatedHeight = calculatedHeight < 300 ? 300 : calculatedHeight
+    let minH = 180
+    calculatedHeight = calculatedHeight < minH ? minH : calculatedHeight
     return calculatedHeight;
   } ;
 
