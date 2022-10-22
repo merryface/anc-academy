@@ -13,7 +13,6 @@
   }
 
   &__title {
-    font-size: 1.4rem;
     margin-bottom: 0.5rem;
     line-height: 1.2;
 
@@ -27,8 +26,8 @@
   }
 
   &__icon {
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 2.5rem;
+    width: 2.5rem;
     color: $white;
   }
 }
@@ -38,7 +37,6 @@
   justify-content: space-between;
   align-items: center;
   width: 20rem;
-  font-size: 1.4rem;
   text-transform: uppercase;
   box-sizing: border-box;
   padding: 0.5rem;
