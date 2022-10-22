@@ -5,27 +5,27 @@ export const groundschoolRates = {
     rates: [
       {
         label: "Hourly with Commercial or Instructor Pilots (FI)",
-        price: 25,
+        price: 50,
       },
       {
         label: "Hourly with a Private Pilot (PI)",
-        price: 20,
+        price: 40,
       },
       {
         label: "10h with FI bundle",
-        price: 230,
+        price: 480,
       },
       {
         label: "10h with PI bundle",
-        price: 190,
+        price: 380,
       },
       {
         label: "Hourly per person for group lessons (minimum 3 people per group)",
-        price: 15,
+        price: 20,
       },
       {
         label: "Full PPL Groundschool Experience",
-        price: 10,
+        price: 990,
       },
     ]
   }
