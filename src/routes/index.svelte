@@ -10,7 +10,7 @@
 
 
   // === Import Page components ===
-  import Home from "../components/home/Home.svelte";
+  import Home from "../pages/Home.svelte";
   import About from '../components/About/About.svelte';
   import NotFound from './404.svelte';
   import Seminars from '../components/Seminars/Seminars.svelte';
