@@ -1,6 +1,4 @@
 <script>
-  import IoIosAirplane from 'svelte-icons/io/IoIosAirplane.svelte'
-  import { Link } from 'svelte-routing';
   import { videoUrl, ctaItems, mobileHeroUrl, logo } from './Hero_home';
   import HeroCta from './HeroCta/HeroCta.svelte';
 </script>
