@@ -58,7 +58,7 @@
   &__cta {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 5rem;
 
     @include above($tablet) {
       flex-direction: row;
