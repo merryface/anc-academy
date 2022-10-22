@@ -15,7 +15,7 @@
   import NotFound from './404.svelte';
   import Seminars from '../components/Seminars/Seminars.svelte';
   
-  import Pricing from '../components/Pricing/Pricing.svelte';
+  import Pricing from '../pages/Pricing.svelte';
   import PricingPage from '../components/PricingPage/PricingPage.svelte';
   
   import Book from '../components/Book/Book.svelte';
