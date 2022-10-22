@@ -5,23 +5,23 @@ export const simulatorRates = {
     rates: [
       {
         label: "Hourly with Commercial or Instructor Pilots (FI)",
-        price: 20,
+        price: 40,
       },
       {
         label: "Hourly with a Private Pilot (PI)",
-        price: 15,
+        price: 30,
       },
       {
         label: "10h with FI bundle",
-        price: 190,
+        price: 380,
       },
       {
         label: "10h with PI bundle",
-        price: 140,
+        price: 280,
       },
       {
         label: "Hourly per person for group lessons (minimum 3 people per group)",
-        price: 10,
+        price: 15,
       },
     ]
   }
