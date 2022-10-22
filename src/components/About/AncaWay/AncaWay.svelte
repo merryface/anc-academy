@@ -7,8 +7,8 @@ import { content, teachingSteps } from "./AncaWay";
   <div class="AncaWay__container">
     <div class="AncaWay__topText">
       <div class="AncaWay__title">
-        <h1 class="AncaWay__titleOne">{content.titleOne}</h1>
-        <h1 class="AncaWay__titleTwo">{content.titleTwo}</h1>
+        <h2 class="AncaWay__titleOne">{content.titleOne}</h2>
+        <h2 class="AncaWay__titleTwo">{content.titleTwo}</h2>
       </div>
       <p class="AncaWay__mainText">{content.mainText}</p>
     </div>
