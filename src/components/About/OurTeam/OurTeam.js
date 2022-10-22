@@ -24,7 +24,7 @@ export const content = {
         alt: "Puffmac",
       },
       name: "Andrew (Puffmac)",
-      bio: "A Commercial Pilot License holder, Andrew has years of experience teaching and coaching people in his current full-time position as well as carrying out discovery flights for newcomers to aviation. He has the ambition to apply his skills with his own students once he obtains his Flight Instructor Rating.",
+      bio: "Not only is Andrew an airline pilot, he also has had years of experience teaching and coaching people in his career as well as carrying out discovery flights for newcomers to aviation. Andrew is our in-house groundschool expert, and is exceptionally skilled at running engaging lessons.",
     },
   ]
 }
