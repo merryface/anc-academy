@@ -21,18 +21,19 @@
   }
 
   &__title {
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 2rem;
 
     @include above($phone) {
-      font-size: 3rem;
-      line-height: 3.7rem;
       margin-bottom: 1rem;
+    }
+
+    @include above($tablet) {
+      font-size: 3rem;
     }
   }
 
   &__subtitle {
-    font-size: 1.4rem;
     text-transform: uppercase;
     color: $secondary-text;
     margin-bottom: 4rem;
