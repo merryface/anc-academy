@@ -7,13 +7,11 @@
   }
 
   &__title {
-    font-size: 3rem;
     color: $primary-colour;
     margin-bottom: 3rem;
   }
 
   &__header {
-    font-size: 2rem;
     color: $primary-colour;
     margin-bottom: 1rem;
   }
@@ -27,7 +25,6 @@
   }
 
   &__intro, &__outro, &__contact, &__list {
-    font-size: 1.4rem;
     line-height: 1.5;
   }
 
@@ -36,7 +33,6 @@
 
     &:before {
       content: '\2708';
-      font-size: 1.5rem;
       margin-right: 1rem;
       color: $primary-colour;
     }
