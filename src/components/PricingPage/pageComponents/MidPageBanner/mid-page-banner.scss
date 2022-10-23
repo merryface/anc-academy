@@ -37,4 +37,10 @@
 :global(.MidPageBanner__blueText) {
   color: $primary-colour;
   font-family: "Fjalla One";
+
+  font-size: 2rem;
+
+  @include above($tablet) {
+    font-size: 3rem;
+  }
 }
