@@ -1,5 +1,5 @@
 <script>
-  import {content} from './JoinUs.js';
+  import {content} from '../components/JoinUs/JoinUs.js';
 </script>
 
 <section class="JoinUs">
@@ -26,5 +26,5 @@
 </section>
 
 <style lang="scss">
-  @import './joinUs';
+  @import '../components/JoinUs/joinUs.scss';
 </style>
