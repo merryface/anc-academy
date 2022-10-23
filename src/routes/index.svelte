@@ -18,7 +18,7 @@
   import Pricing from '../pages/Pricing.svelte';
   import PricingPage from '../pages/PricingPage.svelte';
   
-  import Book from '../components/Book/Book.svelte';
+  import Book from '../pages/Book.svelte';
   import EmailSent from '../components/Book/ContactForm/EmailSent.svelte';
   import Terms from '../components/Terms/Terms.svelte';
   import JoinUs from '../components/JoinUs/JoinUs.svelte';
