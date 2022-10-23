@@ -74,7 +74,7 @@ h1, h2, h3, h4 {
 	font-family: 'Fjalla One', sans-serif;
 }
 
-p,a, blockquote, figcaption, cite, span, td {
+p,a, blockquote, figcaption, cite, span, td, input, label, textarea, button {
 	font-size: 1.8rem;
 }
 
