@@ -6,24 +6,14 @@
   }
 
   &__title {
-    font-size: 3rem;
     color: $primary-colour;
     margin-bottom: 5rem;
     line-height: 1.3;
-
-    @include above($phone) {
-      font-size: 5rem;
-    }
   }
 
   &__subtitle {
-    font-size: 2rem;
     margin-bottom: 1rem;
     color: $primary-colour;
-
-    @include above($phone) {
-      font-size: 3rem;
-    }
   }
 
   &__body,&__list {
