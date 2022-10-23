@@ -60,5 +60,5 @@
 </section>
 
 <style lang="scss">
-  @import './terms';
+  @import '../components/Terms/terms.scss';
 </style>

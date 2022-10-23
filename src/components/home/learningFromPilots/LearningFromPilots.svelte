@@ -9,7 +9,9 @@
     <div class="LearningFromPilots__summary">
       <h2 class="LearningFromPilots__title">{content.title}</h2>
       <p class="LearningFromPilots__subtitle">{content.subtitle}</p>
-      <Link to={content.linkUrl} class="LearningFromPilots__link">{content.linkLabel} <div class="icon"><FaChevronRight /></div></Link>
+      <Link to={content.linkUrl} class="LearningFromPilots__link">
+        {content.linkLabel} <span><div class="icon"><FaChevronRight /></div></span>
+      </Link>
     </div>
     <div class="LearningFromPilots__text">
       <div class="LearningFromPilots__textContent">{@html content.mainText}</div> 

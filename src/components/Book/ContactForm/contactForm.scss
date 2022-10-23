@@ -9,23 +9,16 @@
   }
 
   &__title {
-    font-size: 3rem;
     margin-bottom: 2rem;
   }
 
   &__text {
-    font-size: 1.4rem;
     line-height: 1.5;
     margin-bottom: 4rem;
-
-    @include above($tablet) {
-      font-size: 1.6rem;
-    }
   }
 
   &__formLabel {
     display: block;
-    font-size: 1.4rem;
     margin-bottom: 1rem;
   }
 
@@ -53,7 +46,6 @@
     border: 1px solid $white;
     border-radius: 3px;
     color: $white;
-    font-size: 1.4rem;
     padding: 0.6rem 2rem;
 
     &:hover {

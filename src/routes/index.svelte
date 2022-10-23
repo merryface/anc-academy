@@ -10,18 +10,18 @@
 
 
   // === Import Page components ===
-  import Home from "../components/home/Home.svelte";
-  import About from '../components/About/About.svelte';
+  import Home from "../pages/Home.svelte";
+  import About from '../pages/About.svelte';
   import NotFound from './404.svelte';
-  import Seminars from '../components/Seminars/Seminars.svelte';
+  import Seminars from '../pages/Seminars.svelte';
   
-  import Pricing from '../components/Pricing/Pricing.svelte';
-  import PricingPage from '../components/PricingPage/PricingPage.svelte';
+  import Pricing from '../pages/Pricing.svelte';
+  import PricingPage from '../pages/PricingPage.svelte';
   
-  import Book from '../components/Book/Book.svelte';
+  import Book from '../pages/Book.svelte';
   import EmailSent from '../components/Book/ContactForm/EmailSent.svelte';
-  import Terms from '../components/Terms/Terms.svelte';
-  import JoinUs from '../components/JoinUs/JoinUs.svelte';
+  import Terms from '../pages/Terms.svelte';
+  import JoinUs from '../pages/JoinUs.svelte';
   export let url = '';
 </script>
 

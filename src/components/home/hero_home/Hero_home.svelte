@@ -1,7 +1,6 @@
 <script>
-  import IoIosAirplane from 'svelte-icons/io/IoIosAirplane.svelte'
-  import { Link } from 'svelte-routing';
   import { videoUrl, ctaItems, mobileHeroUrl, logo } from './Hero_home';
+  import HeroCta from './HeroCta/HeroCta.svelte';
 </script>
 
 <section class="HeroHome">
@@ -19,17 +18,10 @@
   <div class="HeroHome__container">
     <div class="HeroHome__cta">
       {#each ctaItems as {title, url, linkLabel}}
-        <div class="HeroHome__ctaItem">
-          <h2 class="HeroHome__title">{title}</h2>
-          <Link to={url} class="HeroHome__link">{linkLabel}
-            <div class="HeroHome__icon">
-              <IoIosAirplane />
-            </div>
-          </Link>
-        </div>
+      <HeroCta title={title} url={url} linkLabel={linkLabel} />
       {/each}
     </div>
-  </div>  
+  </div>
 </section>
 
 <style lang="scss">
