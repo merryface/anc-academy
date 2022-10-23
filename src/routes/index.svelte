@@ -20,7 +20,7 @@
   
   import Book from '../pages/Book.svelte';
   import EmailSent from '../components/Book/ContactForm/EmailSent.svelte';
-  import Terms from '../components/Terms/Terms.svelte';
+  import Terms from '../pages/Terms.svelte';
   import JoinUs from '../pages/JoinUs.svelte';
   export let url = '';
 </script>
