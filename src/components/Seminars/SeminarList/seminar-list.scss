@@ -10,12 +10,10 @@
   }
 
   &__title {
-    font-size: 3rem;
     margin-bottom: 3rem;
   }
 
   &__summary {
-    font-size: 1.4rem;
     line-height: 1.5;
   }
 
@@ -49,12 +47,10 @@
   }
 
   &__seminarTitle {
-    font-size: 2rem;
     margin-bottom: 1rem;
   }
 
   &__seminarSummary {
-    font-size: 1.4rem;
     line-height: 1.5;
     margin-bottom: 1rem;
   }
@@ -90,8 +86,7 @@
   gap: 1rem;
   padding: 0.5rem 1rem;
   border: 1px solid $black;
-  width: 16rem;
-  font-size: 1.4rem;
+  width: 18rem;
   margin: auto;
   margin-top: 4rem;
   margin-bottom: 5rem;
