@@ -73,3 +73,29 @@ p, a, ul, ol, li, form, label, span, div, section, textarea, input, button {
 h1, h2, h3, h4 {
 	font-family: 'Fjalla One', sans-serif;
 }
+
+p,a, blockquote, figcaption, cite, span, td, input, label, textarea, button, li {
+	font-size: 1.8rem;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+@media screen and (max-width: 200px) {
+	h2 {
+		font-size: 10rem;
+	}
+}
+
+h3 {
+	font-size: 2.5rem;
+}
+
+th {
+	font-size: 2rem;
+}

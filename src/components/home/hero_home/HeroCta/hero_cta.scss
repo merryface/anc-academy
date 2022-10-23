@@ -1,0 +1,52 @@
+@import "../../../../utils/utils.scss";
+
+.HeroCta {
+  &__ctaItem {
+    display: flex;
+    flex-direction: column;
+
+    @include above($phone) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @include above($phone) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    text-align: center;
+
+    @include above($phone) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+:global(.HeroCta__link) {
+  text-align: center;
+  width: 20rem;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border: 1px solid $white;
+  color: $white;
+  text-decoration: none;
+  margin: auto;
+
+  @include above($phone) {
+    margin: unset;
+    width: 22rem;
+  }
+
+  &:hover {
+    color: $primary-colour;
+    background-color: $white;
+  }
+}

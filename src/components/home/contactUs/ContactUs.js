@@ -1,5 +1,5 @@
 export const title = "Contact";
-export const email = "admin@anc.co.uk"
+export const email = "tarikmerryface@gmail.com"
 export const socialMediaUrl = [
   {
   id: 0,

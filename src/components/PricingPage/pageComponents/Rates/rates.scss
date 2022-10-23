@@ -6,9 +6,8 @@
   }
 
   &__summary {
-    font-size: 1.6rem;
     line-height: 1.5;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
   &__table {
@@ -18,16 +17,11 @@
   }
 
   &__tableHeader {
-    font-size: 2rem;
     height: 3rem;
     border-bottom: 1px $white solid;
     vertical-align: middle;
     text-transform: uppercase;
     font-family: 'Fjalla One', sans-serif;
-  }
-
-  &__rate {
-    font-size: 1.6rem;
   }
 
   &__label {
