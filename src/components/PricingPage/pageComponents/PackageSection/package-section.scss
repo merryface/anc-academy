@@ -5,18 +5,9 @@
   &__text {
     @include container;
     padding-top: 0;
-    font-size: 1.6rem;
     line-height: 1.2;
 
     @include below($phone) {
-      padding-top: 1rem;
-    }
-
-    @include above($phone) {
-      padding-top: 1rem;
-    }
-
-    @include above($tablet) {
       padding-top: 1rem;
     }
   }
