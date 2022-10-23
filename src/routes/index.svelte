@@ -13,7 +13,7 @@
   import Home from "../pages/Home.svelte";
   import About from '../pages/About.svelte';
   import NotFound from './404.svelte';
-  import Seminars from '../components/Seminars/Seminars.svelte';
+  import Seminars from '../pages/Seminars.svelte';
   
   import Pricing from '../pages/Pricing.svelte';
   import PricingPage from '../pages/PricingPage.svelte';
