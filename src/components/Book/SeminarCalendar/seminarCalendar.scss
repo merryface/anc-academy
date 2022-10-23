@@ -10,12 +10,10 @@
   }
 
   &__title {
-    font-size: 3rem;
     margin-bottom: 2rem;
   }
 
   &__textBody {
-    font-size: 1.4rem;
     line-height: 1.5;
 
     @include above($phone) {
