@@ -2,6 +2,7 @@
   import { content } from './SeminarList';
   import { Link } from 'svelte-routing';
   import IoIosAirplane from 'svelte-icons/io/IoIosAirplane.svelte'
+  import Button from '../../global/Button/Buttton.svelte'
 </script>
 
 <section class="SeminarList">
@@ -23,10 +24,12 @@
       {/each}
     </div>
 
-    <Link to={content.linkUrl} class="SeminarList__link">
-      {content.linkLabel}
-      <div class="icon"><IoIosAirplane /></div>
-    </Link>
+    <Button
+      url={content.linkUrl}
+      label={content.linkLabel}
+      colour="white"
+      margin="3rem auto"
+    />
   </div>
 </section>
 

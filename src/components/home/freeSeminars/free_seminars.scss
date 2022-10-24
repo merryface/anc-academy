@@ -55,6 +55,10 @@
     @include above($phone) {
       margin-bottom: 1.5rem;
     }
+
+    @include below($desktop) {
+      font-size: 2rem;
+    }
   }
 
   &__image {
@@ -70,35 +74,6 @@
     }
   }
 }
-
-:global(.FreeSeminars__link) {
-  color: $white;
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid $white;
-  width: 19rem;
-  margin: auto;
-  margin-top: 3rem;
-
-  .icon {
-    height: 1.6rem;
-    width: 1.6rem;
-  }
-
-  @include above($phone) {
-    margin-top: 5.5rem;
-  }
-
-  &:hover {
-    color: $black;
-    background: $white;
-  }
-} 
 
 .FreeSeminars__triangleTop {
   position: absolute;
