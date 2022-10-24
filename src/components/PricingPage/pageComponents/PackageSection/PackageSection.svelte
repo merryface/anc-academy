@@ -1,6 +1,6 @@
 <script>
   import Accordion from "../Accordion/Accordion.svelte";
-  export let summary
+  export let summary;
   export let accordionItems;
 </script>
 
