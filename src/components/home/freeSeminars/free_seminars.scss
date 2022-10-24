@@ -55,6 +55,10 @@
     @include above($phone) {
       margin-bottom: 1.5rem;
     }
+
+    @include below($desktop) {
+      font-size: 2rem;
+    }
   }
 
   &__image {
