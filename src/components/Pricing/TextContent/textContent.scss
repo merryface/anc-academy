@@ -3,14 +3,27 @@
 .TextContent {
   &__container {
     @include container;
+    display: flex;
+    flex-direction: column;
     margin-top: -3rem;
+    gap: 5rem;
 
     @include above($phone) {
-      display: flex;
       flex-direction: row;
       justify-content: center;
       gap: 3rem;
       padding-top: 1rem;
+    }
+  }
+
+  &__nextSeminar, &__lesson {    
+    @include above($phone) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 30rem;
+      min-height: 18rem;
     }
   }
 
@@ -23,74 +36,5 @@
     }
   }
 
-  &__nextSeminar, &__lesson {    
-    @include above($phone) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 30rem;
-    }
-  }
-}
 
-:global(.TextContent__seminarButton) {
-  color: $black;
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid $black;
-  width: 18rem;
-  margin: auto;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  
-  .icon {
-    height: 1.6rem;
-    width: 1.6rem;
-  }
-
-  @include above($tablet) {
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-  }
-  
-  &:hover {
-    color: $white;
-    background: $black;
-  }
-}
-
-:global(.TextContent__lessonButton) {
-  display: block;
-  width: 18rem;
-  margin: auto;
-  margin-top: 2rem;
-  padding: 0.6rem 1rem;
-  text-transform: uppercase;
-  text-align: center;
-  color: $white;
-  text-decoration: none;
-  border: 1px solid $black;
-  background: $primary-colour;
-
-  @include above($phone) {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-  }
-
-  @include above($tablet) {
-    max-width: 25rem;
-  }
-
-  &:hover {
-    color: $primary-colour;
-    text-decoration: none;
-    border: 1px solid $primary-colour;
-    background: $white;
-  }
 }
