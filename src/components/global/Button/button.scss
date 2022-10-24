@@ -1,0 +1,47 @@
+@import "../../../utils/utils.scss";
+
+:global(.Button) {
+  color: $white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid $white;
+  width: 19rem;
+
+  .icon {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  &:hover {
+    color: $black;
+    background: $white;
+    border: 1px solid $black;
+  }
+} 
+
+
+:global(.Button__primary) {
+  color: $white;
+  background: $primary-colour;
+}
+
+:global(.Button__black) {
+  color: $white;
+  background: $black;
+}
+
+:global(.Button__white) {
+  color: $black;
+  border: 1px solid $black;
+  background: $white;
+
+  &:hover {
+    color: $white;
+    background: $black;
+  }
+}
