@@ -1,0 +1,40 @@
+@import "../../../utils/utils.scss";
+
+:global(.Button) {
+  color: $white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid $white;
+  width: 19rem;
+
+  .icon {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  &:hover {
+    color: $black;
+    background: $white;
+  }
+} 
+
+
+:global(.Button_primary) {
+  color: $white;
+  background: $primary-colour;
+}
+
+:global(.Button_black) {
+  color: $white;
+  background: $black;
+}
+
+:global(.Button_white) {
+  color: $black;
+  background: $black;
+}
