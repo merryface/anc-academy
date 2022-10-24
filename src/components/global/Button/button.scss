@@ -37,4 +37,9 @@
 :global(.Button_white) {
   color: $black;
   background: $black;
+
+  &:hover {
+    color: $white;
+    background: $black;
+  }
 }
