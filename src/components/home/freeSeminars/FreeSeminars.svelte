@@ -1,7 +1,6 @@
 <script>
-  import IoIosAirplane from 'svelte-icons/io/IoIosAirplane.svelte'
-  import { Link } from 'svelte-routing';
   import { setImage, content, cards } from './FreeSeminars.js';
+  import Button from '../../global/Button/Buttton.svelte'
 
   $: innerWidth = 0;
 </script>
@@ -28,10 +27,12 @@
       {/each}
     </div>
 
-    <Link to={content.link.url} class="FreeSeminars__link">
-      {content.link.linkLabel}
-      <div class="icon"><IoIosAirplane /></div>
-    </Link>
+    <Button
+      url={content.link.url}
+      label={content.link.linkLabel}
+      colour="black"
+      margin="3rem auto"
+    />
   </div>
 </section>
 
