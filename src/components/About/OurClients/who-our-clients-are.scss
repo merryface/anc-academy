@@ -39,17 +39,9 @@
 
   &__clientName {
     margin-bottom: 1rem;
-
-    @include above($tablet) {
-      text-align: center;
-    }
   }
 
   &__clientSummary {
     line-height: 1.5;
-
-    @include above($tablet) {
-      text-align: center;
-    }
   }
 }
