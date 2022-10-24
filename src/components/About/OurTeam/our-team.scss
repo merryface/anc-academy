@@ -40,7 +40,6 @@
 
     @include above($phone) {
       align-items: center;
-      text-align: center;
     }
 
     @include above($tablet) {
@@ -70,6 +69,7 @@
 
   &__name {
     margin-bottom: 1rem;
+    align-self:flex-start
   }
 
   &__bio {
