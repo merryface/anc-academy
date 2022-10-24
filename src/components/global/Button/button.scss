@@ -20,21 +20,22 @@
   &:hover {
     color: $black;
     background: $white;
+    border: 1px solid $black;
   }
 } 
 
 
-:global(.Button_primary) {
+:global(.Button__primary) {
   color: $white;
   background: $primary-colour;
 }
 
-:global(.Button_black) {
+:global(.Button__black) {
   color: $white;
   background: $black;
 }
 
-:global(.Button_white) {
+:global(.Button__white) {
   color: $black;
   background: $black;
 
