@@ -57,23 +57,23 @@ export const simulatorPage = {
           items: [
             {
             label: "Instrument Phase 1",
-            fileUrl: "/",
+            fileUrl: "/assets/packages/simulator/instrument/Instrument Phase 1.pdf",
           },
           {
             label: "Instrument Phase 2",
-            fileUrl: "/",
+            fileUrl: "/assets/packages/simulator/instrument/Instrument Phase 2.pdf",
           },
           {
             label: "Instrument Phase 3",
-            fileUrl: "/",
+            fileUrl: "/assets/packages/simulator/instrument/Instrument Phase 3.pdf",
           },
           {
             label: "Instrument Phase 4",
-            fileUrl: "/",
+            fileUrl: "/assets/packages/simulator/instrument/Instrument Phase 4.pdf",
           },            
           {
             label: "Full IFR Course",
-            fileUrl: "/",
+            fileUrl: "/assets/packages/simulator/instrument/Full IFR Course.pdf",
           }
         ]
       },
