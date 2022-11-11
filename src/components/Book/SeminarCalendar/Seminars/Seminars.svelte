@@ -1,5 +1,4 @@
 <script>
-
 </script>
 
 <section class="Seminars">
@@ -10,7 +9,7 @@
       <p class="Seminars__dateTime">19th November 2022 at 20:00 UTC</p>
     </div>
     <div class="Seminars__row">
-      <p class="Seminars__label">Flight Insructor:</p>
+      <p class="Seminars__label">Flight Instructor:</p>
       <p class="Seminars__instructor">Puffmac</p>
     </div>
   </div>
