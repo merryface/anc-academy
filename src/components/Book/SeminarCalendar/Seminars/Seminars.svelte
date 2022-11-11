@@ -1,4 +1,5 @@
 <script>
+  import {content} from './seminars'
 </script>
 
 <section class="Seminars">
@@ -13,8 +14,8 @@
       <p class="Seminars__instructor">Puffmac</p>
     </div>
   </div>
-  <a href="https://discord.gg/scE5pGbBuE" target="_blank" class="Seminars__discord">
-    Join us on Discord to Participate in Seminars
+  <a href={content.discord.url} target="_blank" class="Seminars__discord">
+    {content.discord.label}
   </a>
 </section>
 
