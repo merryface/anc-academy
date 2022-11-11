@@ -1,0 +1,34 @@
+@import '../../../../utils/utils.scss';
+
+.Seminars {
+  margin-bottom: 5rem;
+
+  &__seminarTitle {
+    margin-bottom: 1rem;
+  }
+
+  &__row {
+    margin-bottom: 1em;
+  }
+  &__label {
+    margin-top: 1em;
+    font-weight: bold;
+    color: $primary-colour;
+    line-height: 1.2;
+  }
+
+  &__discord {
+    margin-top: 2rem;
+    display: inline-block;
+    color: #fff;
+    background: $primary-colour;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+
+    &:hover {
+      color: $black;
+      background: #fff;
+    }
+  }
+}
