@@ -13,7 +13,6 @@
 
   onMount(async () => {
     const records = await table.select().all()
-    console.log(records)
     sems = records
   })
 </script>
