@@ -20,17 +20,4 @@
       font-size: 1.6rem;
     }
   }
-
-  &__calendar {
-    width: 100%;
-    min-height: 40rem;
-
-    @include above($phone) {
-      min-height: 60rem;
-    }
-
-    @include above($tablet) {
-      min-height: 70rem;
-    }
-  }
 }
