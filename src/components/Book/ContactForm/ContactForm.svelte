@@ -4,7 +4,6 @@
 
   onMount(async () => {
     document.getElementById('sendTo').setAttribute("action", `https://formsubmit.co/${content.emailString}`);
-    console.log(content.responseMessage);
   });
 </script>
 
