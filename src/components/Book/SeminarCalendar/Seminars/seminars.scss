@@ -3,20 +3,6 @@
 .Seminars {
   margin-bottom: 5rem;
 
-  &__seminarTitle {
-    margin-bottom: 1rem;
-  }
-
-  &__row {
-    margin-bottom: 1em;
-  }
-  &__label {
-    margin-top: 1em;
-    font-weight: bold;
-    color: $primary-colour;
-    line-height: 1.2;
-  }
-
   &__discord {
     margin-top: 2rem;
     display: inline-block;
