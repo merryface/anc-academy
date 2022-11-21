@@ -6,9 +6,9 @@ export const content = {
 
   sems: [
     {
-      Seminar: "VFR Flying Introduction",
-      Date: "Saturday 19th November 2022 at 20:00 - 22:00 UTC",
-      Instructor: "Puffmac"
+      Seminar: "IFR Flying Introduction",
+      Date: "TBD",
+      Instructor: "Merryface"
     }
   ]
 }
