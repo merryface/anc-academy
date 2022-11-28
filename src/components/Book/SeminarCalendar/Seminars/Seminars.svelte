@@ -11,7 +11,7 @@
       <Seminar sem={sem} />
     {/each}
   </div>
-  <a href={content.discord.url} target="_blank" class="Seminars__discord">
+  <a href={content.discord.url} target="_blank" class="Seminars__discord" rel="noreferrer">
     {content.discord.label}
   </a>
 </section>
