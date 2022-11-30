@@ -13,9 +13,19 @@
 
 <section class="Seminars">
   <div class="Seminars__container">
-    {#each seminars as sem}
-      <Seminar sem={sem} />
-    {/each}
+    {#if seminars.length > 0}
+      {#each seminars as sem}
+        <Seminar sem={sem} />
+      {/each}
+    {/if}
+
+    {#if seminars.length === 0}
+      <Seminar sem={{
+        seminar: "New Seminars Coming Soon",
+        instructor: "",
+        date: "",
+      }} />
+    {/if}
   </div>
   <a href={content.discord.url} target="_blank" class="Seminars__discord" rel="noreferrer">
     {content.discord.label}
