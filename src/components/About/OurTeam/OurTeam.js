@@ -24,7 +24,7 @@ export const content = {
         alt: "Puffmac",
       },
       name: "Andrew (Puffmac)",
-      bio: "Not only is Andrew an airline pilot, he also has had years of experience teaching and coaching people in his career as well as carrying out discovery flights for newcomers to aviation. Andrew is our in-house groundschool expert, and is exceptionally skilled at running engaging lessons.",
+      bio: "Not only is Andrew an airline pilot on the ATR, he also has had years of experience teaching and coaching people in his career as well as carrying out discovery flights for newcomers to aviation. Andrew is our in-house groundschool expert, and is exceptionally skilled at running engaging lessons.",
     },
   ]
 }
