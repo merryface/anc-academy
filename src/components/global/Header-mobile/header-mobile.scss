@@ -20,6 +20,9 @@
   }
 
   &__burgerMenu {
+    background: none;
+    border: none;
+    padding: 0;
     height: 2rem;
     width: 3rem;
     display: flex;
@@ -78,6 +81,9 @@
   }
 
   &__closeButton {
+    background: none;
+    border: none;
+    padding: 0;
     position: absolute;
     height: 3rem;
     width: 3rem;

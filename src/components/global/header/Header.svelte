@@ -11,7 +11,11 @@
     <Router>
     <nav class="Header__navItems">
       {#each headerNavItems as {label, url}}
+      {#if url==="blog"}
+      <a class="Header__navItem" href="https://anc-academy-blog.blogspot.com/">{label}</a>
+      {:else}
       <Link class="Header__navItem" to={url}>{label}</Link>
+      {/if}
       {/each}
     </nav>
     </Router>

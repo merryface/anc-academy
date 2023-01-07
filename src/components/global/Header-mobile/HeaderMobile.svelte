@@ -25,24 +25,28 @@
 <header class="HeaderMobile">
   <div class="HeaderMobile__container">
     <a href="/"><img class="HeaderMobile__logo" {src} alt="white ANC logo"></a>
-    <div class="HeaderMobile__burgerMenu {menuOpen}" on:click={toggleMenu}>
+    <button class="HeaderMobile__burgerMenu {menuOpen}" on:click={toggleMenu}>
       <div class="HeaderMobile__burgerLine line1"></div>
       <div class="HeaderMobile__burgerLine line2"></div>
       <div class="HeaderMobile__burgerLine line3"></div>
-    </div>
+    </button>
   </div>
 
   <div class="HeaderMobile__navMenu {isOpen}">
     <div class="HeaderMobile__navMenuTop">
       <img class="HeaderMobile__menuLogo" {src} alt="white ANC logo">
-      <div class="HeaderMobile__closeButton" on:click={toggleMenu}>
+      <button class="HeaderMobile__closeButton" on:click={toggleMenu}>
         <MdClose />
-      </div>
+      </button>
     </div>
     <Router>
     <nav class="HeaderMobile__navItems">
       {#each headerNavItems as {label, url}}
+      {#if url==="blog"}
+      <a class="HeaderMobile__navItem" href="https://anc-academy-blog.blogspot.com/">{label}</a>
+      {:else}
       <Link class="HeaderMobile__navItem" to={url} on:click={toggleMenu}>{label}</Link>
+      {/if}
       {/each}
     </nav>
     </Router>

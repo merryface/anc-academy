@@ -24,4 +24,9 @@ export const headerNavItems = [
     label: "Book",
     url: "book",
   },
+  {
+    id: 5,
+    label: "Blog",
+    url: "blog",
+  },
 ] 
