@@ -8,7 +8,7 @@ export const content = {
         alt: "Merryface",
       },
       name: "Tarik (Merryface)",
-      bio: "Tarik is an EASA rated flight instructor, and type rated on the Airbus A320. Tarik has professional experience as a flight instructor, survey pilot, and an airline pilot for a major European carrier. Tarik has been using flight simulators to help his training since 2007 and he hasn’t stopped using them since.",
+      bio: "Tarik is an EASA rated flight instructor, business jet pilot, and former A320 airline pilot. Tarik has professional experience as a flight instructor, survey pilot, and an airline pilot for a major European carrier. Tarik has been using flight simulators to help his training since 2007 and he hasn’t stopped using them since.",
     },
     {
       image: {
